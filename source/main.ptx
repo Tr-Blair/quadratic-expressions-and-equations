@@ -10,8 +10,8 @@
 </latex-image-preamble>
 </docinfo>
 <book xml:id="document" label="document">
-<title>INTRODUCTION TO POLYNOMIALS</title>
-  <subtitle>Quadratic Expressions and Equations</subtitle>
+<title>Quadratic Expressions and Equations</title>
+  <subtitle>An Introduction to Polynomials</subtitle>
   
   <chapter xml:id="ch-course-documents" label="ch-course-documents">
 <title>Course Documents</title>
@@ -697,7 +697,7 @@
 
 </section>
 <section xml:id="sec-solving-qudratic-equations" label="sec-solving-qudratic-equations">
-<title>Qudratic Equations</title>
+<title>Quadratic Equations</title>
  <handout>
     <title>Quadratic Equations</title>
 <subsection>
