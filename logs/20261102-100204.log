@@ -1,0 +1,37 @@
+WARNING : Project's CLI version could not be detected from `requirements.txt`.
+WARNING : Try `pretext update-project` to produce a compatible file.
+INFO    : Building target website-2
+INFO    : XSL conversion of C:\Users\Admin\Downloads\quadratic-expresions-and-equations-by-tonny-blair\source\main.ptx by C:\Users\Admin\.ptx\2.56.1\core\xsl\utilities\pretext-enhanced-source.xsl
+INFO    : messages from the log for XSL processing (prefaced with a *):
+WARNING : * PTX:DEPRECATE: (2026-07-30) the external directory is a property of your source, and is now declared with a "directories/@external" attribute within "docinfo".  The publication file entry "source/directories/@external" is honored meanwhile, but please relocate it.
+INFO    : successful application of C:\Users\Admin\.ptx\2.56.1\core\xsl\utilities\pretext-enhanced-source.xsl
+INFO    : discovering source file's directory name: C:\Users\Admin\Downloads\quadratic-expresions-and-equations-by-tonny-blair\source
+WARNING : (2026-07-30) the external directory is a property of your source, and is now declared with a "directories/@external" attribute within "docinfo". The publisher file entry "source/directories/@external" is honored meanwhile, but please relocate it.
+INFO    : verifying and expanding input directory: C:\Users\Admin\Downloads\quadratic-expresions-and-equations-by-tonny-blair\source\external
+INFO    : input directory expanded to absolute path: C:\Users\Admin\Downloads\quadratic-expresions-and-equations-by-tonny-blair\source\external
+INFO    : Generating any needed assets.
+INFO    : Finished generating assets.
+
+INFO    : Preparing to build into C:\Users\Admin\Downloads\quadratic-expresions-and-equations-by-tonny-blair\output\website-2.
+WARNING : Node.js must be installed to build CSS files.  Please install node.js and npm.
+ Will try to use prebuilt CSS files instead.
+WARNING : Cannot find npm.  Will try to use prebuilt CSS files instead.
+WARNING : Unable to install npm packages to build css files.  Non-default CSS themes require node.js and npm to be installed.  See https://pretextbook.org/doc/guide/html/node-and-npm.html
+WARNING : 
+INFO    : XSL conversion of C:\Users\Admin\Downloads\quadratic-expresions-and-equations-by-tonny-blair\source\main.ptx by C:\Users\Admin\.ptx\2.56.1\core\xsl\utilities\report-publisher-variables.xsl
+INFO    : successful application of C:\Users\Admin\.ptx\2.56.1\core\xsl\utilities\report-publisher-variables.xsl
+INFO    : Using rs services version 2.56 from the PreTeXt CDN
+INFO    : Downloading rs services file from https://cdn.jsdelivr.net/gh/pretextbook/html-static@2.56/dist/_static/runestone_services.xml.
+INFO    : converting C:\Users\Admin\Downloads\quadratic-expresions-and-equations-by-tonny-blair\source\main.ptx to HTML in C:\Users\Admin\AppData\Local\Temp\ptx-2ade3ed0
+INFO    : XSL conversion of C:\Users\Admin\Downloads\quadratic-expresions-and-equations-by-tonny-blair\source\main.ptx by C:\Users\Admin\.ptx\2.56.1\core\xsl\pretext-html.xsl
+INFO    : * PTX:INFO:   checking all deprecated elements.
+INFO    : successful application of C:\Users\Admin\.ptx\2.56.1\core\xsl\pretext-html.xsl
+INFO    : Removing temporary directory C:\Users\Admin\AppData\Local\Temp\ptx-2ade3ed0
+INFO    : Removing temporary directory C:\Users\Admin\AppData\Local\Temp\ptx-kxjjx7fa
+INFO    : 
+Finished build for target website-2. Run `pretext view website-2` to see the results.
+
+INFO    : 
+Success!  Built requested target(s) without errors.
+
+INFO    : 

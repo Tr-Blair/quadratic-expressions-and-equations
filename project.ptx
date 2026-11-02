@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project ptx-version="2">
+  <targets>
+    <target name="website-2" format="html" output-dir="website-2" publication="website-2.ptx"/>
+    <target name="pdf" format="pdf" output-dir="pdf" output-filename="pdf.pdf" publication="pdf.ptx"/>
+  </targets>
+</project>

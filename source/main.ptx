@@ -1,0 +1,2344 @@
+<pretext xml:lang="en-US">
+<docinfo>
+<!-- Edit this blurb to change the summary that appears in search and social -->
+<blurb>
+    A document authored using PreTeXt.Plus, the hosted platform for authoring
+    using the free and open source PreTeXt markup language.
+</blurb>
+  <latex-image-preamble>
+\usepackage{tikz, pgf}
+</latex-image-preamble>
+</docinfo>
+<book xml:id="document" label="document">
+<title>INTRODUCTION TO POLYNOMIALS</title>
+  <subtitle>Quadratic Expressions and Equations</subtitle>
+  
+  <chapter xml:id="ch-course-documents" label="ch-course-documents">
+<title>Course Documents</title>
+    <section xml:id="sec-syllabus" label="sec-syllabus">
+<title>Syllabus</title>
+  <introduction>
+    <p>
+      Welcome to our course. In this Course we will introduce quadratic polynomials (Polynomials of degree 2). This course will quadratic expressions, equations and quadratic graphs.
+    </p>
+  </introduction>
+  <!-- Include chapters -->
+  <subsection xml:id="sec-course-info">
+    <title>Course Information</title>
+
+    <p>
+      This is the syllabus for <term>Introduction to polynomials: Quadratic equations and expressions</term>
+      for 2026. It is a foundational course on advanced polynomial functions.
+      <!-- use a description list (dl) for short items -->
+      <dl>
+        <li>
+          <title>Instructor</title>
+
+          <p>
+            Mr. TONNY BLAIR
+            <url href="tonnyblair858@gmail.com">tonnyblair858@gmail.com</url>.
+          </p>
+        </li>
+
+        <li>
+          <title>Course Description</title>
+
+          <p>
+            course description from catalog
+          </p>
+        </li>
+
+        <li>
+          <title>Prerequisite</title>
+          <p>
+            Linear expressions and equations
+          </p>
+        </li>
+
+        <li>
+          <title>Textbook and course materials</title>
+
+         <p>
+            <ol>
+              <li>
+                <p><pubtitle>Mentor Core Mathematics Grade 10</pubtitle></p></li>
+            <li><p><pubtitle>James Stewart's Algebra and Trigonometry</pubtitle></p>
+              </li>
+              <li>
+                <p>
+                  <pubtitle>Schaum's Outline College Algebra</pubtitle>
+                </p>
+              </li>
+            </ol>
+          </p>
+        </li>
+      </dl>
+    </p>
+    <!-- Use paragraphs to break apart subsections -->
+    <paragraphs>
+      <title>Course Overview</title>
+
+      <p>
+       <ul>
+        <li>
+          <p><term>Core Competency:</term> Critical thinking and problem solving through mathematical modelling </p>
+        </li>
+        <li>
+          <p>
+            <term>Learning Outcomes:</term> By the end of this module, the learners should be able to: <ol marker="1.">
+              <li>
+                <p>Identify and write quadratic expressions and equations.</p>
+              </li>
+              <li>
+                <p>
+                  Expand and factorize quadratic expressions using quadratic identities.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Form quadratic equations from real-life situations and solve quadratic equations using multiple methods.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Sketch and interpret quadratic graphs and apply quadratic concepts to real world scenarios.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </li>
+       </ul> 
+      </p>
+    </paragraphs>
+  </subsection>
+  <!-- Other subsections for larger dividers -->
+  <subsection xml:id="sec-assessments">
+    <title>Assessments and Evaluation</title>
+
+    <p>
+      <ol marker="1.">
+        <li>
+          <p><term>Formative Assessment</term></p>
+<ul>
+  <li>
+    <p>Daily Practice: Short problem sets covering each solving method</p>
+  </li>
+  <li>
+    <p>
+      Peer Review: Students exchanging papers to verify step by step working.
+    </p>
+  </li>
+</ul>
+        </li>
+        <li>
+          <p>
+            <term>Summative Assessment</term>:
+            <ul>
+              <li>
+                <p>Practice Problems: Problem sets that blends real world applications of quadratic concepts</p>
+              </li>
+              <li>
+                <p>
+                  Olympiad Problems: Practice Olympiad problems that test mastery and application of concepts. 
+                </p>
+              </li>
+            </ul>
+
+          </p>
+        </li>
+      </ol>
+    </p>
+  </subsection>
+</section>
+</chapter>
+  <chapter xml:id="ch-course-notes" label="ch-course-notes">
+<title>Course Notes</title>
+      <introduction>
+        <p>
+          The following notes are intended to remind you what we covered each week.
+          They are not a substitute for attending class and not a substitute for reading the textbook.
+        </p>
+      
+
+
+
+
+</introduction>
+
+<section xml:id="sec-formation-of-quadratic-expression" label="sec-formation-of-quadratic-expression">
+<title>Quadratic Expressions</title>
+  <handout>
+    <title>Quadratic Expressions</title>
+   <subsection> 
+    <title>Introduction</title>
+<p>
+  In earlier modules, we worked with algebraic expressions. In this module we study a special kind of algebraic expression called a polynomial, and in particular quadratic expressions.
+</p>
+ <p> Let's consider the following example:</p>
+  <p>
+    Brian visits a shop that sells sealed boxes. Each blue box contains 4 oranges and each red box contains 5 apples. Brian buys x blue boxes and y red boxes, and on his way home he also buys 8 bananas.
+    </p>
+    <p>
+      <ul>
+        <li>
+          <p>The x blue boxes hold 4x oranges.</p>
+        </li>
+        <li>
+          <p>
+            the y red boxes contains 5y apples
+          </p>
+        </li>
+        <li>
+          <p>
+            The total number of fruits is <m>4x+5y+8</m>
+          </p>
+        </li>
+      </ul>
+    </p>
+<p>
+  In this expression:
+  <ul>
+    <li>
+      <p><m>4x, 5y</m> and <m>8 </m> are <term>terms</term> in the expression.</p>
+    </li>
+    <li>
+      <p>
+        <m>x</m> and <m>y</m> are the unknown values called <term>variables.</term>
+      </p>
+    </li>
+    <li>
+      <p>
+        4 and 5 are the <term>coefficients</term> of <m>x</m> and <m>y</m>
+      </p>
+    </li>
+    <li>
+      <p>
+        8 is the <term>constant</term> term
+      </p>
+    </li>
+  </ul>
+</p>
+<p>
+  Consider this other example:
+</p>
+<p>
+  A charity trust plans a rectangular prayer hall. Its length is 1 meter more than twice its length.
+  <ul>
+    <li>
+      <p>let the width be <m>=x</m></p>
+    </li>
+    <li>
+      <p>
+        The length will be <m>= 2x+1</m>
+      </p>
+    </li>
+    <li>
+      <p>
+        The area of the rectangle <m>= x(2x+1) = 2x^2 +x</m>
+      </p>
+    </li>
+  </ul>
+  <p><m>2x^2+x</m> is also an expression for the area of the rectangle. In this expression there is only one unknown value <m>x</m>, thus it only has one <term>variable.</term></p> 
+</p>
+    <p/>
+   <p>Expressions such as <m>3x + 1</m>, <m>2x^2 + x</m>, and <m>x^3 - 4x + 7</m> each contain a single variable. Each is called a <term>polynomial with one variable or a univariate polynomial</term>.</p> 
+  <p><term>What are Polynomials</term></p>
+    <p><term>A polynomial</term> is an expression in which the variable is raised only to whole-number powers (<m>0, 1, 2, 3, \dots</m>). For example, <m>5x^2 - 3x + 2</m> is a polynomial, but <m>\frac{1}{x}</m> and <m>\sqrt{x}</m> are not.</p>
+    
+    <p>The highest power of the variable is called the <term>degree</term> of the polynomial.</p>
+    
+    <tabular>
+        <row bottom="major">
+            <cell>Polynomial</cell>
+            <cell>Highest power</cell>
+            <cell>Degree</cell>
+            <cell>Name</cell>
+        </row>
+        <row>
+            <cell><m>3x + 1</m></cell>
+            <cell><m>x^1</m></cell>
+            <cell>1</cell>
+            <cell>Linear</cell>
+        </row>
+        <row>
+            <cell><m>2x^2 + x</m></cell>
+            <cell><m>x^2</m></cell>
+            <cell>2</cell>
+            <cell>Quadratic</cell>
+        </row>
+        <row>
+            <cell><m>x^3 - 4x + 7</m></cell>
+            <cell><m>x^3</m></cell>
+            <cell>3</cell>
+            <cell>Cubic</cell>
+        </row>
+    </tabular>
+
+    <p><term>Quadratic Expressions</term></p>
+    <p>A quadratic expression is a polynomial of degree 2. Its general form is <m>ax^2 + bx + c</m>, where <m>a</m>, <m>b</m>, and <m>c</m> are numbers and <m>a \neq 0</m>.</p>
+    
+    <p>If <m>a</m> were 0, the <m>x^2</m> term would vanish and we would be left with a linear expression. The numbers <m>b</m> and <m>c</m> may be zero, so <m>x^2 - 9</m> and <m>3x^2 + 5x</m> are both quadratic.</p>
+    <exercise label="short-answer-labela">
+      <statement>
+        <p>State the degree of each of the following polynomials and hence state whether its a quadratic expression.
+          <ol marker="1.">
+            <li>
+              <p><m>7x - 2,</m></p>
+            </li>
+            <li>
+              <p>
+                <m>4x^2 +3 </m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>5-x^3</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>x^2+x+3</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <response/>
+    </exercise>
+    </subsection>
+<subsection>
+      <title>Formation of Quadratic Expressions</title>
+<p>
+  Quadratic expressions appear whenever two quantities that both depend on the same variable are multiplied together, or when a variable is squared. The product of two linear expressions is a quadratic expression.
+</p>
+<example xml:id="ex-21">
+  <title></title>
+  <statement>
+    <p>Form a quadratic equation by multiplying the the following linear equations.<m>x+2</m> and <m>x+5.</m></p>
+  </statement>
+  <solution>
+    <p><md>
+    <mrow>(x + 2)(x + 5) \amp = x(x) + x(5) + 2(x) + 2(5)</mrow>
+    <mrow>\amp = x^2 + 5x + 2x + 10</mrow>
+    <mrow>\amp = x^2 + 7x + 10</mrow>
+</md></p>
+  </solution>
+</example>
+<example xml:id="ex-22">
+  <title></title>
+  <statement>
+    <p>Form a quadratic expression from the product of <m>(2x − 3)</m> and <m>(x + 4)</m>.</p>
+  </statement>
+  <solution>
+    <p><md>
+    <mrow>(2x - 3)(x + 4) \amp = 2x^2 + 8x - 3x - 12</mrow>
+    <mrow>\amp = 2x^2 + 5x - 12</mrow>
+</md></p>
+  </solution>
+</example>
+<p>We can also form quadratic expressions by squaring linear expressions</p>
+<example xml:id="ex-23">
+  <title></title>
+  <statement>
+    <p>Form a quadratic equation by squaring the <m>(x-3)</m></p>
+  </statement>
+  <solution>
+    <p><md>
+    <mrow>(x - 3)^2 \amp = (x - 3)(x - 3)</mrow>
+    <mrow>\amp = x^2 - 3x - 3x + 9</mrow>
+    <mrow>\amp = x^2 - 6x + 9</mrow>
+</md></p>
+  </solution>
+</example>
+<term>Forming quadratic equations from Word Problems</term>
+<example xml:id="ex-24">
+  <title></title>
+  <statement>
+    <p>A rectangular field has length <m>(x + 4)</m> metres and width <m>(x − 1)</m> metres. Form an expression for its area.</p>
+  </statement>
+  <solution>
+    <p><md>
+    <mrow>\text{Area} \amp = \text{length} \times \text{width}</mrow>
+    <mrow>\amp = (x + 4)(x - 1)</mrow>
+    <mrow>\amp = x^2 - x + 4x - 4</mrow>
+    <mrow>\amp = x^2 + 3x - 4</mrow>
+</md></p>
+  </solution>
+</example>
+<example xml:id="ex-25">
+  <title></title>
+  <statement>
+    <p> The two shorter sides of a right-angled triangle are <m>x</m> cm and <m>(x + 3)</m> cm. Form an expression for the square of the hypotenuse.</p>
+  </statement>
+  <solution>
+    <p><p>From the Pythagorean theorem:</p>
+<md>
+    <mrow>h^2 + b^2 \amp = Hy^2</mrow>
+    <mrow>Hy^2 \amp = x^2 + (x + 3)^2</mrow>
+    <mrow>\amp = x^2 + x^2 + 6x + 9</mrow>
+    <mrow>\amp = 2x^2 + 6x + 9</mrow>
+</md></p>
+  </solution>
+</example>
+<exercise label="short-answer-labelb">
+  <statement>
+    <p>
+    <ol marker="1.">
+        <li>Form a quadratic expression for the product of <m>(x - 3)</m> and <m>(2x + 1)</m>.</li>
+        <li>A rectangular room has length <m>(3x + 2)</m> metres and breadth <m>(x - 1)</m> metres. Write an expression for its area.</li>
+        <li>Form an expression for the sum of the squares of two consecutive even numbers, <m>n</m> and <m>n + 2</m>.</li>
+        <li>A trader sells <m>x</m> items at a price of <m>(80 - x)</m> shillings each. Form an expression for the total income.</li>
+        <li>A rectangular field has length <m>(2x + 1)</m> metres and width <m>(x + 3)</m> metres. Write its area, then find the area when <m>x = 5</m>.</li>
+    </ol>
+</p>
+  </statement>
+  <response/>
+</exercise>
+<note xml:id="note-name">
+  <title>Common Mistakes when forming Quadratic Expressions</title>
+  <p><p>
+    <ol marker="1.">
+        <li>Writing <m>(x + 3)^2</m> as <m>x^2 + 9</m>. The correct expansion is <m>x^2 + 6x + 9</m>.</li>
+        <li>Forgetting to multiply every term in the first bracket by every term in the second.</li>
+        <li>Sign errors, such as writing <m>(x - 1)(x + 4) = x^2 + 3x + 4</m> instead of <m>x^2 + 3x - 4</m>.</li>
+        <li>Adding area expressions of different types without collecting like terms.</li>
+    </ol>
+</p></p>
+</note>
+    </subsection>
+  </handout>
+</section>
+<section xml:id="sec-quadratic-identities" label="sec-quadratic-identities">
+<title>Quadratic Identities</title>
+  <handout>
+    <title>Quadratic Identities</title>
+<subsection>
+  <title>Introduction</title>
+  <p>
+    We formed quadratic expressions by expanding brackets such as (x + 3)(x + 3). Some products appear so often that they follow a fixed pattern. These patterns are called <term>quadratic identities.</term>
+  </p>
+  <p>Below are the three quadratic identities:</p>
+  <identity xml:id="ident-name1">
+    <title>square of a sum</title>
+    <statement>
+      <p><md>(a+b)^2 =a^2 + 2ab + b^2</md></p>
+    </statement>
+    <proof>
+      <p><md>
+    <mrow>(a + b)(a + b) \amp = a^2 + ab + ba + b^2</mrow>
+    <mrow>\amp = a^2 + 2ab + b^2</mrow>
+</md></p>
+    </proof>
+  </identity>
+  <identity xml:id="ident-name2">
+    <title>Square of a difference</title>
+    <statement>
+      <p><md>(a-b)^2 =a^2 - 2ab + b^2</md></p>
+    </statement>
+    <proof>
+      <p><md>
+    <mrow>(a - b)(a - b) \amp = a^2 - ab - ba + b^2</mrow>
+    <mrow>\amp = a^2 - 2ab + b^2</mrow>
+</md></p>
+    </proof>
+  </identity>
+  <identity xml:id="ident-name3">
+    <title>Difference of two squares)</title>
+    <statement>
+          <p>
+           <md> (a + b)(a − b) = a² − b²</md>
+          </p>
+    </statement>
+    <proof>
+      <p><md>
+    <mrow>(a + b)(a - b) \amp = a^2 - ab + ba - b^2</mrow>
+    <mrow>\amp = a^2 - b^2</mrow>
+</md></p>
+    </proof>
+  </identity>
+  <p>Let's see a few examples of how we can use quadratic identities to expand and simplify quadratic expressions</p>
+  <example xml:id="ex-1">
+    <title></title>
+    <statement>
+      <p>Expand <m>(3x + 4y)^2</m></p>
+    </statement>
+    <solution>
+      <p><p>From the identity:</p>
+<md>
+    <mrow>(a + b)^2 \amp = a^2 + 2ab + b^2</mrow>
+</md>
+<p>Let <m>a = 3x</m> and <m>b = 4y</m>:</p>
+<md>
+    <mrow>(3x + 4y)^2 \amp = (3x)^2 + 2(3x)(4y) + (4y)^2</mrow>
+    <mrow>\amp = 9x^2 + 24xy + 16y^2</mrow>
+</md></p>
+    </solution>
+  </example>
+  <example xml:id="ex-2">
+    <title></title>
+    <statement>
+      <p> Expand <m>(2x - 5)²</m></p>
+    </statement>
+    <solution>
+      <p><p>From the identity:</p>
+<md>
+    <mrow>(a - b)^2 \amp = a^2 - 2ab + b^2</mrow>
+</md>
+<p>Let <m>a = 2x</m> and <m>b = 5</m>:</p>
+<md>
+    <mrow>(2x - 5)^2 \amp = (2x)^2 - 2(2x)(5) + 5^2</mrow>
+    <mrow>\amp = 4x^2 - 20x + 25</mrow>
+</md></p>
+    </solution>
+  </example>
+  <example xml:id="ex-3">
+    <title></title>
+    <statement>
+      <p>Simplify <m>(x + 3)² − (x − 3)².</m></p>
+    </statement>
+    <solution>
+      <p><p>Using the identities:</p>
+<md>
+    <mrow>(a + b)^2 \amp = a^2 + 2ab + b^2</mrow>
+    <mrow>(a - b)^2 \amp = a^2 - 2ab + b^2</mrow>
+</md>
+<p>Expanding and simplifying the expression:</p>
+<md>
+    <mrow>(x + 3)^2 - (x - 3)^2 \amp = (x^2 + 2(x)(3) + 3^2) - (x^2 - 2(x)(3) + 3^2)</mrow>
+    <mrow>\amp = (x^2 + 6x + 9) - (x^2 - 6x + 9)</mrow>
+    <mrow>\amp = x^2 + 6x + 9 - x^2 + 6x - 9</mrow>
+    <mrow>\amp = 12x</mrow>
+</md></p>
+    </solution>
+  </example>
+  <example xml:id="ex-4">
+    <title></title>
+    <statement>
+      <p>Factorize <m>3x² − 75</m></p>
+    </statement>
+    <solution>
+      <p><p>Using the identity:</p>
+<md>
+    <mrow>a^2 - b^2 \amp = (a + b)(a - b)</mrow>
+</md>
+<p>Factoring and simplifying the expression:</p>
+<md>
+    <mrow>3x^2 - 75 \amp = 3(x^2 - 25)</mrow>
+    <mrow>\amp = 3(x^2 - 5^2)</mrow>
+    <mrow>\amp = 3(x + 5)(x - 5)</mrow>
+</md></p>
+    </solution>
+  </example>
+ <exercise label="short-answer-labelc">
+  <statement>
+     <p>
+    <ol marker="1">
+        <li>
+            <p>Expand:</p>
+            <ol marker="a)">
+                <li><m>(x + 6)^2</m></li>
+                <li><m>(5x - 2)^2</m></li>
+                <li><m>(4x + 3)(4x - 3)</m></li>
+                <li><m>(2a - 3b)^2</m></li>
+            </ol>
+        </li>
+        <li>
+            <p>Factorise:</p>
+            <ol marker="a)">
+                <li><m>x^2 - 64</m></li>
+                <li><m>9x^2 + 12x + 4</m></li>
+                <li><m>36x^2 - 60x + 25</m></li>
+            </ol>
+        </li>
+    </ol>
+</p>
+  </statement>
+  <response/>
+ </exercise>
+  </subsection>
+
+  <subsection>
+    <title>Factorization of Quadratic Expressions</title>
+    <p>
+      Factorization of a quadratic equation involves rewriting it as a product of two linear binomial factors.
+    </p>
+    <p><term>Factorization by Greatest Common Factor</term></p>
+    <p>Before applying other methods, always check if all the terms share a common numerical or algebraic factor.</p>
+    <example xml:id="ex-5">
+      <title></title>
+      <statement>
+        <p>Factorize <m>3x^2-6x</m></p>
+      </statement>
+      <solution>
+        <p>Identify the GCF, which is <m>3x</m></p>
+        <p>
+          <md>
+            <mrow>3x^2-6x \amp= 3x(x-2)</mrow>
+            <mrow>\amp=3x(x-2)</mrow>
+            </md>
+        </p>
+      </solution>
+    </example>
+<p><term>Factorization by splitting the middle term</term></p>
+<p>
+  This method is used to factorize quadratic equations with 3 terms. To factor <m>ax^2+bx+c</m>
+</p>
+<p>
+  <ol marker="1.">
+    <li>
+      <p>Multiply coefficient <m>a</m> by the constant term <m>c</m></p>
+    </li>
+    <li>
+      <p>
+        Look for two numbers that multiply to give the product <m>ac</m> and add up to give the middle coefficient <m>b</m>
+      </p>
+    </li>
+    <li>
+      <p>
+        Rewrite the middle terms <m>bx</m> using the two numbers
+      </p>
+    </li>
+    <li>
+      <p>
+        Factorize pairwise by grouping the terms
+      </p>
+    </li>
+  </ol>
+</p>
+<example xml:id="ex-6">
+  <title></title>
+  <statement>
+    <p>Factorise <m>6x^2 +11x +4</m></p>
+  </statement>
+  <solution>
+    <p>To factorise <m>6x^2 + 11x + 4</m>, we find two numbers that multiply to <m>ac = 6 \times 4 = 24</m> and add to <m>b = 11</m>:</p>
+<p>
+    <ol marker="1">
+        <li>Identify factors of <m>24</m>: <m>(1, 24)</m>, <m>(2, 12)</m>, <m>(3, 8)</m>, <m>(4, 6)</m>.</li>
+        <li>Select the pair whose sum is <m>11</m>: <m>3 + 8 = 11</m>.</li>
+    </ol>
+</p>
+<p>Split the middle term <m>11x</m> into <m>3x + 8x</m> and factor by grouping:</p>
+<md>
+    <mrow>6x^2 + 11x + 4 \amp = 6x^2 + 3x + 8x + 4</mrow>
+    <mrow>\amp = 3x(2x + 1) + 4(2x + 1)</mrow>
+    <mrow>\amp = (3x + 4)(2x + 1)</mrow>
+</md>
+  </solution>
+</example>
+<example xml:id="ex-7">
+  <title></title>
+  <statement>
+    <p>Factorise <m>−x² + 5x + 6</m></p>
+  </statement>
+  <solution>
+    <p>To factorise <m>-x^2 + 5x + 6</m>, factor out <m>-1</m> first:</p>
+<md>
+    <mrow>-x^2 + 5x + 6 \amp = -(x^2 - 5x - 6)</mrow>
+</md>
+<p>Find two numbers that multiply to <m>-6</m> and add to <m>-5</m>: these are <m>-6</m> and <m>1</m>.</p>
+<p>Split the middle term and factor by grouping:</p>
+<md>
+    <mrow>-(x^2 - 5x - 6) \amp = -(x^2 - 6x + x - 6)</mrow>
+    <mrow>\amp = -[x(x - 6) + 1(x - 6)]</mrow>
+    <mrow>\amp = -(x - 6)(x + 1)</mrow>
+    <mrow>\amp = (6 - x)(x + 1)</mrow>
+</md>
+  </solution>
+</example>
+<example xml:id="ex-8">
+  <title></title>
+  <statement>
+    <p>A rectangular plot has area <m>(x² + 9x + 14)</m> m² and width <m>(x + 2)</m> m. Find its length and perimeter</p>
+  </statement>
+  <solution>
+    <p>To find the length, factorise the area polynomial <m>x^2 + 9x + 14</m>:</p>
+<p>Find two numbers that multiply to <m>14</m> and add to <m>9</m>: these are <m>7</m> and <m>2</m>.</p>
+<md>
+    <mrow>\text{Area} \amp = x^2 + 9x + 14</mrow>
+    <mrow>\amp = (x + 7)(x + 2)</mrow>
+</md>
+<p>Since <m>\text{Area} = \text{Length} \times \text{Width}</m> and <m>\text{Width} = (x + 2)\text{ m}</m>, the length is:</p>
+<md>
+    <mrow>\text{Length} \amp = (x + 7)\text{ m}</mrow>
+</md>
+<p>To find the perimeter, apply the perimeter formula <m>\text{Perimeter} = 2(\text{Length} + \text{Width})</m>:</p>
+<md>
+    <mrow>\text{Perimeter} \amp = 2[(x + 7) + (x + 2)]</mrow>
+    <mrow>\amp = 2(2x + 9)</mrow>
+    <mrow>\amp = (4x + 18)\text{ m}</mrow>
+</md>
+  </solution>
+</example>
+<example xml:id="ex-9">
+  <title></title>
+  <statement>
+    <p>Simplify <m>\frac{x^2 - 9}{x^2 + x - 6}</m></p>
+  </statement>
+  <solution>
+    <p>Factorise the numerator using the difference of squares identity <m>a^2 - b^2 = (a + b)(a - b)</m>:</p>
+<md>
+    <mrow>x^2 - 9 \amp = (x + 3)(x - 3)</mrow>
+</md>
+<p>Factorise the denominator by finding two numbers that multiply to <m>-6</m> and add to <m>1</m> (<m>3</m> and <m>-2</m>):</p>
+<md>
+    <mrow>x^2 + x - 6 \amp = (x + 3)(x - 2)</mrow>
+</md>
+<p>Substitute both factored forms into the fraction and cancel common factors:</p>
+<md>
+    <mrow>\frac{x^2 - 9}{x^2 + x - 6} \amp = \frac{(x + 3)(x - 3)}{(x + 3)(x - 2)}</mrow>
+    <mrow>\amp = \frac{x - 3}{x - 2}</mrow>
+</md>
+  </solution>
+</example>
+    </subsection>
+    <p/>
+  </handout>
+
+</section>
+<section xml:id="sec-solving-qudratic-equations" label="sec-solving-qudratic-equations">
+<title>Qudratic Equations</title>
+ <handout>
+    <title>Quadratic Equations</title>
+<subsection>
+  <title>Introduction</title>
+  <p>We have you studied quadratic expressions of the form <m>ax^2 +bx +c, a \neq 0.</m> When we equate this expression to zero we get a quadratic equation.
+  </p>
+  <p>
+    A quadratic equation in the variable <m>x</m> is an equation of the form <m>ax^2 + bx + c = 0</m>, where <m>a</m>, <m>b</m>, and <m>c</m> are real numbers and <m>a \neq 0</m>.
+</p>
+<p>
+    For example, <m>x^2 + x - 30 = 0</m> is a quadratic equation. Similarly, <m>2x^2 - 3x + 1 = 0</m>, <m>4x - 2x^2 + 2 = 0</m>, and <m>1 - x^2 + 300 = 0</m> are also quadratic equations.
+</p>
+<p>
+    Quadratic equations arise in several situations in the world around us and in different fields of mathematics.
+</p>
+<p>
+    Let us consider a few examples.
+</p>
+<example xml:id="ex-10">
+  <title></title>
+  <statement>
+    <p>John and Kamau together have 45 marbles. Both of them lost 5 marbles each, and the product of the number of marbles they now have is 124. </p>
+  </statement>
+  <solution>
+    <p>
+    Let the number of marbles John had be <m>x</m>.
+</p>
+<p>
+    Then the number of marbles Kamau had is <m>45 - x</m>.
+</p>
+<p>
+    After both lose <m>5</m> marbles each:
+</p>
+<p>
+    <ul>
+        <li><p>John has: <m>x - 5</m> marbles</p></li>
+        <li><p>Kamau has: <m>(45 - x) - 5 = 40 - x</m> marbles</p></li>
+    </ul>
+</p>
+<p>
+    Given that the product of their remaining marbles is <m>124</m>:
+</p>
+<md>
+    <mrow>(x - 5)(40 - x) \amp = 124</mrow>
+    <mrow>40x - x^2 - 200 + 5x \amp = 124</mrow>
+    <mrow>-x^2 + 45x - 324 \amp = 0</mrow>
+    <mrow>x^2 - 45x + 324 \amp = 0</mrow>
+</md>
+  </solution>
+</example>
+<example xml:id="ex-11">
+  <title></title>
+  <statement>
+    <p>A train travels a distance of 480 km at a uniform speed. If the speed had been 8 km/h less, then it would have taken 3 hours more to cover the same distance.Find the speed of the train.</p>
+  </statement>
+  <solution>
+    <p>
+    Let the original uniform speed of the train be <m>x\text{ km/h}</m>.
+</p>
+<p>
+    The distance covered is <m>480\text{ km}</m>.
+</p>
+<p>
+    Using the relationship <m>\text{Time} = \frac{\text{Distance}}{\text{Speed}}</m>:
+</p>
+<p>
+    <ul>
+        <li><p>Original time taken: <m>t_1 = \frac{480}{x}\text{ hours}</m></p></li>
+        <li><p>Time taken at reduced speed <m>(x - 8)\text{ km/h}</m>: <m>t_2 = \frac{480}{x - 8}\text{ hours}</m></p></li>
+    </ul>
+</p>
+<p>
+    Given that the time difference is <m>3\text{ hours}</m>:
+</p>
+<md>
+    <mrow>\frac{480}{x - 8} - \frac{480}{x} \amp = 3</mrow>
+    <mrow>\frac{160}{x - 8} - \frac{160}{x} \amp = 1 \quad \text{(dividing by 3)}</mrow>
+    <mrow>\frac{160x - 160(x - 8)}{x(x - 8)} \amp = 1</mrow>
+    <mrow>\frac{1280}{x^2 - 8x} \amp = 1</mrow>
+    <mrow>x^2 - 8x - 1280 \amp = 0</mrow>
+</md>
+  </solution>
+</example>
+<exercise label="short-answer-labeld">
+  <statement>
+    <p>
+    <ol marker="1">
+        <li>
+            <p>
+                The area of a rectangular plot is <m>528\text{ m}^2</m>. The length of the plot (in metres) is one more than twice its breadth. Find the length and breadth of the plot.
+            </p>
+        </li>
+        <li>
+            <p>
+                The product of two consecutive positive integers is <m>306</m>. Find the integers.
+            </p>
+        </li>
+        <li>
+            <p>
+                Rohan’s mother is <m>26</m> years older than him. The product of their ages (in years) <m>3</m> years from now will be <m>360</m>. Find Rohan’s present age.
+            </p>
+        </li>
+    </ol>
+</p>
+  </statement>
+  <response/>
+</exercise>
+  </subsection>
+
+<subsection>
+<title>Solving Quadratic Equations</title>
+<p>
+    A quadratic equation can be written in the standard form:
+</p>
+<md>
+    <mrow>ax^2 + bx + c = 0 \quad \text{where } a \neq 0</mrow>
+</md>
+<p>
+    The values of <m>x</m> that satisfy the equation are called the <term><em>roots</em></term> (or solutions) of the equation, which graphically respond to th x-intercepts of the parabola. A quadratic equation has at most two real roots.
+</p>
+<p>
+    There are three primary algebraic methods used to solve quadratic equations, along graphical inspection.
+</p>
+<p>
+  <term>Solving Quadratic equations by Factorization</term>
+</p>
+<p>
+  When a quadratic equations can be easily factored, this is often the fastest method. It relies on the <term>Zero Product Property</term>: 
+  <p>If the product of two factors is zero, then at least one of the factors must be zero (i.e., if AB = 0, then A = 0 or B = 0).</p>
+</p>
+<p>
+    <ol marker="1">
+        <li>
+            <p>Write the equation in standard form (<m>ax^2 + bx + c = 0</m>).</p>
+        </li>
+        <li>
+            <p>Factor the quadratic expression into two linear binomials.</p>
+        </li>
+        <li>
+            <p>Set each binomial factor equal to zero.</p>
+        </li>
+        <li>
+            <p>Solve the resulting linear equations for <m>x</m>.</p>
+        </li>
+    </ol>
+</p>
+<example xml:id="ex-12">
+  <title></title>
+  <statement>
+    <p>Solve <m>x^{2} - 5x + 6 = 0</m></p>
+  </statement>
+  <solution>
+    <p>Solve <m>x^2 - 5x + 6 = 0</m> by factorization:</p>
+<p>Find two numbers that multiply to <m>6</m> and add to <m>-5</m>: these are <m>-2</m> and <m>-3</m>.</p>
+<md>
+    <mrow>x^2 - 5x + 6 \amp = 0</mrow>
+    <mrow>(x - 2)(x - 3) \amp = 0</mrow>
+</md>
+<p>Set each factor equal to zero and solve for <m>x</m>:</p>
+<md>
+    <mrow>x - 2 = 0 \amp \quad \text{or} \quad x - 3 = 0</mrow>
+    <mrow>x = 2 \amp \quad \text{or} \quad x = 3</mrow>
+</md>
+  </solution>
+</example>
+<example xml:id="ex-13">
+  <title></title>
+  <statement>
+    <p>Solve for <m>x</m>, in <m>3x^{2} + 10x = 8</m></p>
+  </statement>
+  <solution>
+    <p>Rewrite the equation in standard form <m>ax^2 + bx + c = 0</m>:</p>
+<md>
+    <mrow>3x^2 + 10x - 8 \amp = 0</mrow>
+</md>
+<p>Factorise by finding two numbers that multiply to <m>3 \times (-8) = -24</m> and add to <m>10</m> (these are <m>12</m> and <m>-2</m>):</p>
+<md>
+    <mrow>3x^2 + 12x - 2x - 8 \amp = 0</mrow>
+    <mrow>3x(x + 4) - 2(x + 4) \amp = 0</mrow>
+    <mrow>(3x - 2)(x + 4) \amp = 0</mrow>
+</md>
+<p>Set each binomial factor equal to zero and solve for <m>x</m>:</p>
+<md>
+    <mrow>3x - 2 = 0 \amp \quad \text{or} \quad x + 4 = 0</mrow>
+    <mrow>x = \frac{2}{3} \amp \quad \text{or} \quad x = -4</mrow>
+</md>
+  </solution>
+</example>
+<example xml:id="ex-14">
+  <title></title>
+  <statement>
+    <p>The length of a rectangular plot of land is <m>3\text{ metres}</m> longer than
+    its width. If the total area of the plot is <m>40\text{ m}^{2}</m>, find its
+    dimensions.</p>
+  </statement>
+  <solution>
+    <p>
+    Let the width of the rectangular plot be <m>w\text{ m}</m>. Then the length is <m>(w + 3)\text{ m}</m>.
+</p>
+<p>
+    Using the area formula <m>\text{Area} = \text{Length} \times \text{Width}</m>:
+</p>
+<md>
+    <mrow>w(w + 3) \amp = 40</mrow>
+    <mrow>w^2 + 3w - 40 \amp = 0</mrow>
+</md>
+<p>
+    Factorise by finding two numbers that multiply to <m>-40</m> and add to <m>3</m> (these are <m>8</m> and <m>-5</m>):
+</p>
+<md>
+    <mrow>(w + 8)(w - 5) \amp = 0</mrow>
+</md>
+<p>
+    Set each factor equal to zero:
+</p>
+<md>
+    <mrow>w + 8 = 0 \amp \quad \text{or} \quad w - 5 = 0</mrow>
+    <mrow>w = -8 \amp \quad \text{or} \quad w = 5</mrow>
+</md>
+<p>
+    Since width must be positive, we reject <m>w = -8</m>. Thus, the width is <m>5\text{ m}</m> and the length is <m>5 + 3 = 8\text{ m}</m>.
+</p>
+  </solution>
+</example>
+
+    <p><term>Solving Quadratic equations by completing the square</term></p>
+  <p>
+    This method transforms any quadratic equation into a perfect square quadratic equation equal to a constant, making it easy to solve by taking square roots.
+  </p>
+  <p>
+    To solve for the roots of a quadratic equation by completing square:
+  </p>
+  <p>
+    <p>
+    <ol marker="1">
+        <li>
+            <p>Ensure the leading coefficient <m>a = 1</m> (divide the entire equation by <m>a</m> if necessary).</p>
+        </li>
+        <li>
+            <p>Move the constant term to the right side of the equation.</p>
+        </li>
+        <li>
+            <p>Add <m>\left(\frac{b}{2}\right)^2</m> to both sides to complete the square on the left.</p>
+        </li>
+        <li>
+            <p>Express the left side as a squared binomial and simplify the right side.</p>
+        </li>
+        <li>
+            <p>Take the square root of both sides and solve for <m>x</m>.</p>
+        </li>
+    </ol>
+</p>
+  </p>
+<example xml:id="ex-15">
+  <title></title>
+  <statement>
+    <p>Solve <m>x^2 + 6x + 5 = 0</m> by completing the square:</p>
+  </statement>
+  <solution>
+    <p>Solve <m>x^2 + 6x + 5 = 0</m> by completing the square:</p>
+<p>Move the constant term to the right side of the equation:</p>
+<md>
+    <mrow>x^2 + 6x \amp = -5</mrow>
+</md>
+<p>Add <m>\left(\frac{6}{2}\right)^2 = 9</m> to both sides to complete the square:</p>
+<md>
+    <mrow>x^2 + 6x + 9 \amp = -5 + 9</mrow>
+    <mrow>(x + 3)^2 \amp = 4</mrow>
+</md>
+<p>Take the square root of both sides and solve for <m>x</m>:</p>
+<md>
+    <mrow>x + 3 \amp = \pm\sqrt{4}</mrow>
+    <mrow>x + 3 \amp = \pm 2</mrow>
+    <mrow>x = -3 + 2 = -1 \amp \quad \text{or} \quad x = -3 - 2 = -5</mrow>
+</md>
+  </solution>
+</example>
+
+<example xml:id="ex-16">
+  <title></title>
+  <statement>
+    <p>A school plans to construct a rectangular playground whose length is
+    <m>4\text{ metres}</m> longer than its width. If the total area of the
+    playground must be <m>60\text{ square metres}</m>, find the dimensions of the
+    playground using the completing the square method.</p>
+  </statement>
+  <solution>
+    <p>
+    Let the width of the rectangular playground be <m>w\text{ m}</m>. Then the length is <m>(w + 4)\text{ m}</m>.
+</p>
+<p>
+    Using the area formula <m>\text{Area} = \text{Length} \times \text{Width}</m>:
+</p>
+<md>
+    <mrow>w(w + 4) \amp = 60</mrow>
+    <mrow>w^2 + 4w \amp = 60</mrow>
+</md>
+<p>
+    Complete the square by adding <m>\left(\frac{4}{2}\right)^2 = 4</m> to both sides:
+</p>
+<md>
+    <mrow>w^2 + 4w + 4 \amp = 60 + 4</mrow>
+    <mrow>(w + 2)^2 \amp = 64</mrow>
+</md>
+<p>
+    Take the square root of both sides and solve for <m>w</m>:
+</p>
+<md>
+    <mrow>w + 2 \amp = \pm\sqrt{64}</mrow>
+    <mrow>w + 2 \amp = \pm 8</mrow>
+    <mrow>w = -2 + 8 = 6 \amp \quad \text{or} \quad w = -2 - 8 = -10</mrow>
+</md>
+<p>
+    Since physical width must be positive, we reject <m>w = -10</m>. Thus, the width of the playground is <m>6\text{ m}</m> and the length is <m>6 + 4 = 10\text{ m}</m>.
+</p>
+  </solution>
+</example>
+<p><term>Solving Quadratic equations Using quadratic formula</term></p>
+<p>
+    The universal method that works for any quadratic equation,whether it can be easily factored or not. It is derived from completing the square. The formula is:
+</p>
+<md>
+    <mrow>x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}</mrow>
+</md>
+<p>
+    The term inside the square root, <m>\Delta = b^2 - 4ac</m>, is called the <em>Discriminant</em>, which determines the nature of the roots:
+</p>
+<p>
+    <ul>
+        <li><p><m>\Delta &gt; 0</m>: Two distinct real roots.</p></li>
+        <li><p><m>\Delta = 0</m>: One repeated real root (a perfect square).</p></li>
+        <li><p><m>\Delta &lt; 0</m>: Two complex (non-real) roots.</p></li>
+    </ul>
+</p>
+<p>
+  <term>Derivation of the quadratic formula</term>
+</p>
+<p>
+    The quadratic formula can be universally derived for any quadratic equation by applying the method of completing the square to the standard form.
+</p>
+
+<p>
+    <term>The General Quadratic Equation</term>
+</p>
+<p>
+    Start with the standard form of a quadratic equation, where <m>a \neq 0</m>:
+</p>
+<md>
+    <mrow>ax^2 + bx + c = 0</mrow>
+</md>
+
+<p>
+    <term>Step-by-Step Derivation</term>
+</p>
+<p>
+    <ol marker="1.">
+        <li>
+            <p>
+                <term>Make the leading coefficient equal to 1:</term> Divide every term in the equation by <m>a</m>:
+            </p>
+            <md>
+                <mrow>x^2 + \frac{b}{a}x + \frac{c}{a} = 0</mrow>
+            </md>
+        </li>
+        <li>
+            <p>
+                <term>Isolate the variable terms:</term> Move the constant term <m>\frac{c}{a}</m> to the right-hand side of the equation:
+            </p>
+            <md>
+                <mrow>x^2 + \frac{b}{a}x = -\frac{c}{a}</mrow>
+            </md>
+        </li>
+        <li>
+            <p>
+                <term>Complete the square on the left side:</term> Take the coefficient of <m>x</m>, which is <m>\frac{b}{a}</m>, divide it by <m>2</m> to get <m>\frac{b}{2a}</m>, and square it to get <m>\frac{b^2}{4a^2}</m>.
+            </p>
+            <p>
+                Add this value to both sides of the equation:
+            </p>
+            <md>
+                <mrow>x^2 + \frac{b}{a}x + \frac{b^2}{4a^2} = \frac{b^2}{4a^2} - \frac{c}{a}</mrow>
+            </md>
+        </li>
+        <li>
+            <p>
+                <term>Simplify both sides:</term> Express the left side as a squared binomial and combine the fractions on the right side using the common denominator <m>4a^2</m>:
+            </p>
+            <md>
+                <mrow>\left(x + \frac{b}{2a}\right)^2 \amp = \frac{b^2}{4a^2} - \frac{4ac}{4a^2}</mrow>
+                <mrow>\left(x + \frac{b}{2a}\right)^2 \amp = \frac{b^2 - 4ac}{4a^2}</mrow>
+            </md>
+        </li>
+        <li>
+            <p>
+                <term>Take the square root of both sides:</term> Apply the square root property, including both the positive and negative roots (<m>\pm</m>):
+            </p>
+            <md>
+                <mrow>x + \frac{b}{2a} = \pm \sqrt{\frac{b^2 - 4ac}{4a^2}}</mrow>
+            </md>
+            <p>
+                Simplify the denominator on the right side since <m>\sqrt{4a^2} = 2a</m>:
+            </p>
+            <md>
+                <mrow>x + \frac{b}{2a} = \frac{\pm \sqrt{b^2 - 4ac}}{2a}</mrow>
+            </md>
+        </li>
+        <li>
+            <p>
+                <term>Isolate <m>x</m>:</term> Subtract <m>\frac{b}{2a}</m> from both sides and combine the terms under the common denominator:
+            </p>
+            <md>
+                <mrow>x \amp = -\frac{b}{2a} \pm \frac{\sqrt{b^2 - 4ac}}{2a}</mrow>
+                <mrow>x \amp = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}</mrow>
+            </md>
+        </li>
+    </ol>
+</p>
+
+<p>
+    <term>Result</term>
+</p>
+<p>
+    This completes the derivation, yielding the universal Quadratic Formula:
+</p>
+<md>
+    <mrow>x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}</mrow>
+</md>
+<example xml:id="ex-17">
+  <title></title>
+  <statement>
+    <p>Solve <m>2x^{2} + 5x - 3 = 0</m></p>
+  </statement>
+  <solution>
+    <p>Solve <m>2x^2 + 5x - 3 = 0</m> using the quadratic formula:</p>
+<p>Identify the coefficients <m>a = 2</m>, <m>b = 5</m>, and <m>c = -3</m>.</p>
+<p>Substitute these values directly into <m>x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}</m>:</p>
+<md>
+    <mrow>x \amp = \frac{-5 \pm \sqrt{5^2 - 4(2)(-3)}}{2(2)}</mrow>
+    <mrow>\amp = \frac{-5 \pm \sqrt{25 + 24}}{4}</mrow>
+    <mrow>\amp = \frac{-5 \pm \sqrt{49}}{4}</mrow>
+    <mrow>\amp = \frac{-5 \pm 7}{4}</mrow>
+</md>
+<p>Solve for both cases:</p>
+<md>
+    <mrow>x = \frac{-5 + 7}{4} = \frac{1}{2} \amp \quad \text{or} \quad x = \frac{-5 - 7}{4} = -3</mrow>
+</md>
+  </solution>
+</example>
+<example xml:id="ex-18">
+  <title></title>
+  <statement>
+    <p>Solve by quadratic formula: <m>x^{2} + 6x + 5 = 0</m></p>
+  </statement>
+  <solution>
+    <p>Solve <m>x^2 + 6x + 5 = 0</m> using the quadratic formula:</p>
+<p>Identify the coefficients <m>a = 1</m>, <m>b = 6</m>, and <m>c = 5</m>.</p>
+<p>Substitute these values directly into <m>x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}</m>:</p>
+<md>
+    <mrow>x \amp = \frac{-6 \pm \sqrt{6^2 - 4(1)(5)}}{2(1)}</mrow>
+    <mrow>\amp = \frac{-6 \pm \sqrt{36 - 20}}{2}</mrow>
+    <mrow>\amp = \frac{-6 \pm \sqrt{16}}{2}</mrow>
+    <mrow>\amp = \frac{-6 \pm 4}{2}</mrow>
+</md>
+<p>Solve for both cases:</p>
+<md>
+    <mrow>x = \frac{-6 + 4}{2} = -1 \amp \quad \text{or} \quad x = \frac{-6 - 4}{2} = -5</mrow>
+</md>
+  </solution>
+</example>
+
+<exercise label="short-answer-labele">
+  <statement>
+    <p>
+    <ol marker="1">
+        <li>
+            <p>Solve <m>x^2 - 9x + 20 = 0</m> by factorization.</p>
+        </li>
+        <li>
+            <p>Solve <m>x^2 + 8x - 9 = 0</m> by completing the square.</p>
+        </li>
+        <li>
+            <p>Solve <m>3x^2 + 5x - 2 = 0</m> using the quadratic formula.</p>
+        </li>
+        <li>
+            <p>Solve <m>2x^2 + 7x = 15</m> by factorization.</p>
+        </li>
+        <li>
+            <p>Solve <m>x^2 - 6x - 16 = 0</m> by completing the square.</p>
+        </li>
+        <li>
+            <p>Solve <m>2x^2 - 7x + 3 = 0</m> using the quadratic formula.</p>
+        </li>
+        <li>
+            <p>The length of a rectangular lawn is <m>5\text{ metres}</m> longer than its width. If the area of the lawn is <m>84\text{ m}^2</m>, calculate its length and width by factorization.</p>
+        </li>
+        <li>
+            <p>The product of two consecutive positive integers is <m>156</m>. Set up a quadratic equation and solve it by completing the square to find the two integers.</p>
+        </li>
+        <li>
+            <p>A ball is kicked vertically upwards into the air. Its height <m>h</m> (in metres) after <m>t</m> seconds is given by <m>h = 20t - 5t^2</m>. Find the time(s) <m>t</m> when the ball reaches a height of <m>15\text{ metres}</m> using the quadratic formula.</p>
+        </li>
+        <li>
+            <p>The hypotenuse of a right-angled triangle is <m>(x + 2)\text{ cm}</m>. The other two sides are <m>x\text{ cm}</m> and <m>(x - 2)\text{ cm}</m>. Use Pythagoras' Theorem to form a quadratic equation and solve for <m>x</m>.</p>
+        </li>
+    </ol>
+</p>
+  </statement>
+  <response/>
+</exercise>
+  </subsection>
+    <p/>
+  </handout>
+
+</section>
+<section xml:id="sec-graphical-representation-od-quadratic-equations" label="sec-graphical-representation-od-quadratic-equations">
+<title>Graphical Representation of Quadratic Equations</title>
+<handout>
+  <title>Quadratic Graphs</title>
+
+  <subsection>
+    <title>Drawing Quadratic Graphs from a Table of Values</title>
+
+    <p>
+      A quadratic function has the form <m>y = ax^2 + bx + c</m>, where <m>a \neq 0</m>.
+      For each value of <m>x</m>, the function gives one value of <m>y</m>.
+      When we plot these points and join them, we get a smooth curve called a <term>parabola</term>.
+    </p>
+
+    <p>Parabolas appear in many real situations, such as:</p>
+    <ul>
+      <li><p>the path of a football kicked into the air,</p></li>
+      <li><p>the cables of a suspension bridge,</p></li>
+      <li><p>the arch of a tunnel,</p></li>
+      <li><p>water from a fountain,</p></li>
+      <li><p>car headlight reflectors.</p></li>
+    </ul>
+
+    <example xml:id="ex-graph-y-equals-x-squared">
+      <title>Graphing <m>y = x^2</m></title>
+      <statement>
+        <p>Draw the graph of <m>y = x^2</m>.</p>
+      </statement>
+      <solution>
+        <p>Complete a table of values for <m>x</m> from <m>-3</m> to <m>3</m>.</p>
+
+        <tabular halign="center">
+          <row bottom="minor">
+            <cell><m>x</m></cell>
+            <cell><m>-3</m></cell>
+            <cell><m>-2</m></cell>
+            <cell><m>-1</m></cell>
+            <cell><m>0</m></cell>
+            <cell><m>1</m></cell>
+            <cell><m>2</m></cell>
+            <cell><m>3</m></cell>
+          </row>
+          <row>
+            <cell><m>y</m></cell>
+            <cell><m>9</m></cell>
+            <cell><m>4</m></cell>
+            <cell><m>1</m></cell>
+            <cell><m>0</m></cell>
+            <cell><m>1</m></cell>
+            <cell><m>4</m></cell>
+            <cell><m>9</m></cell>
+          </row>
+        </tabular>
+
+        <p>Plot the points and join them with a smooth curve.</p>
+
+      <figure xml:id="fig-name1">
+        <caption></caption>
+        <image source="graph-of-y-equals-x-squared-negative-y-axis.svg">
+<shortdescription>graph-of-y-equals-x-squared-negative-y-axis</shortdescription>
+</image>
+      </figure>
+      </solution>
+    </example>
+
+    <example xml:id="ex-graph-2x-squared-minus-3x-minus-5">
+  <title>Graphing <m>y = 2x^2 - 3x - 5</m></title>
+  <statement>
+    <p>
+      Draw the graph of <m>y = 2x^2 - 3x - 5</m> for <m>-2 \le x \le 4</m>.
+      Use the graph to estimate the roots of <m>2x^2 - 3x - 5 = 0</m>.
+    </p>
+  </statement>
+  <solution>
+    <p>Complete a table of values for <m>x</m> from <m>-2</m> to <m>4</m>.</p>
+
+    <tabular halign="center">
+      <row bottom="minor">
+        <cell><m>x</m></cell>
+        <cell><m>-2</m></cell>
+        <cell><m>-1</m></cell>
+        <cell><m>0</m></cell>
+        <cell><m>1</m></cell>
+        <cell><m>2</m></cell>
+        <cell><m>3</m></cell>
+        <cell><m>4</m></cell>
+      </row>
+      <row>
+        <cell><m>y</m></cell>
+        <cell><m>9</m></cell>
+        <cell><m>0</m></cell>
+        <cell><m>-5</m></cell>
+        <cell><m>-6</m></cell>
+        <cell><m>-3</m></cell>
+        <cell><m>4</m></cell>
+        <cell><m>15</m></cell>
+      </row>
+    </tabular>
+
+    <p>Plot the points and join them with a smooth curve.</p>
+
+    <figure xml:id="fig-graph-2x-squared-minus-3x-minus-5">
+      <caption>Graph of <m>y = 2x^2 - 3x - 5</m></caption>
+      <image source="graph-of-y-equals-2x-squared-minus-3x-minus-5.svg">
+<shortdescription>graph-of-y-equals-2x-squared-minus-3x-minus-5</shortdescription>
+</image>
+    </figure>
+
+    <p>From the graph:</p>
+    <ul>
+      <li><p>The curve crosses the <m>x</m>-axis at <m>x = -1</m> and between <m>x = 2</m> and <m>x = 3</m>, at about <m>x = 2.5</m>.</p></li>
+      <li><p>The <m>y</m>-intercept is <m>-5</m>.</p></li>
+      <li><p>The parabola opens upwards, and its lowest point is close to <m>x = 0.75</m>.</p></li>
+    </ul>
+    <p>Check by factorization:</p>
+    <md>
+      <mrow>2x^2 - 3x - 5 \amp = 0</mrow>
+      <mrow>2x^2 + 2x - 5x - 5 \amp = 0</mrow>
+      <mrow>2x(x+1) - 5(x+1) \amp = 0</mrow>
+      <mrow>(2x-5)(x+1) \amp = 0</mrow>
+    </md>
+    <p>So <m>x = \frac{5}{2}</m> or <m>x = -1</m>, which agrees with the graph.</p>
+  </solution>
+</example>
+
+<example xml:id="ex-graph-x-squared-minus-4x-plus-4">
+  <title>Graphing <m>y = x^2 - 4x + 4</m></title>
+  <statement>
+    <p>
+      Draw the graph of <m>y = x^2 - 4x + 4</m> for <m>-1 \le x \le 5</m>.
+      How many times does the curve meet the <m>x</m>-axis?
+    </p>
+  </statement>
+  <solution>
+    <p>Complete a table of values for <m>x</m> from <m>-1</m> to <m>5</m>.</p>
+
+    <tabular halign="center">
+      <row bottom="minor">
+        <cell><m>x</m></cell>
+        <cell><m>-1</m></cell>
+        <cell><m>0</m></cell>
+        <cell><m>1</m></cell>
+        <cell><m>2</m></cell>
+        <cell><m>3</m></cell>
+        <cell><m>4</m></cell>
+        <cell><m>5</m></cell>
+      </row>
+      <row>
+        <cell><m>y</m></cell>
+        <cell><m>9</m></cell>
+        <cell><m>4</m></cell>
+        <cell><m>1</m></cell>
+        <cell><m>0</m></cell>
+        <cell><m>1</m></cell>
+        <cell><m>4</m></cell>
+        <cell><m>9</m></cell>
+      </row>
+    </tabular>
+
+    <p>Plot the points and join them with a smooth curve.</p>
+
+    <figure xml:id="fig-graph-x-squared-minus-4x-plus-4">
+      <caption>Graph of <m>y = x^2 - 4x + 4</m></caption>
+      <image source="graph-of-y-equals-x-squared-minus-4x-plus-4.svg">
+<shortdescription>graph-of-y-equals-x-squared-minus-4x-plus-4</shortdescription>
+</image>
+    </figure>
+
+    <p>From the graph:</p>
+    <ul>
+      <li><p>The curve touches the <m>x</m>-axis at one point only, <m>x = 2</m>. It does not cross the axis.</p></li>
+      <li><p>The <m>y</m>-intercept is <m>4</m>.</p></li>
+      <li><p>The minimum point is <m>(2, 0)</m>, and it lies on the <m>x</m>-axis.</p></li>
+    </ul>
+    <p>Check by factorization:</p>
+    <md>
+      <mrow>x^2 - 4x + 4 \amp = 0</mrow>
+      <mrow>(x-2)(x-2) \amp = 0</mrow>
+      <mrow>(x-2)^2 \amp = 0</mrow>
+    </md>
+    <p>
+      So <m>x = 2</m> is the only root. We call it a <term>repeated root</term>.
+      A quadratic equation can have two different real roots, one repeated root, or no real roots.
+    </p>
+  </solution>
+</example>
+
+  </subsection>
+</handout>
+</section>
+<section xml:id="sec-answers-to-checkpoint" label="sec-answers-to-checkpoint">
+<title>Answers to Checkpoint</title>
+ <handout>
+    <title>Answers to Checkpoint</title>
+
+<!-- ===================== 2.1 QUADRATIC EXPRESSIONS ===================== -->
+<section xml:id="sec-quadratic-expressions-checkpoints">
+  <title>Checkpoints: Quadratic Expressions</title>
+
+  <!-- Checkpoint 2.1.1 -->
+  <problem xml:id="prob-2-1-1-q1">
+    <title>Checkpoint 2.1.1, Question 1</title>
+    <statement>
+      <p>State the degree of <m>7x - 2</m> and hence state whether it is a quadratic expression.</p>
+    </statement>
+    <solution>
+      <p>The highest power of <m>x</m> is <m>1</m>, so the degree is <m>1</m>. It is a linear expression, so it is <em>not</em> quadratic.</p>
+    </solution>
+  </problem>
+
+  <problem xml:id="prob-2-1-1-q2">
+    <title>Checkpoint 2.1.1, Question 2</title>
+    <statement>
+      <p>State the degree of <m>4x^2 + 3</m> and hence state whether it is a quadratic expression.</p>
+    </statement>
+    <solution>
+      <p>The highest power of <m>x</m> is <m>2</m>, so the degree is <m>2</m>. It is a quadratic expression (here <m>b = 0</m>).</p>
+    </solution>
+  </problem>
+
+  <problem xml:id="prob-2-1-1-q3">
+    <title>Checkpoint 2.1.1, Question 3</title>
+    <statement>
+      <p>State the degree of <m>5 - x^3</m> and hence state whether it is a quadratic expression.</p>
+    </statement>
+    <solution>
+      <p>The highest power of <m>x</m> is <m>3</m>, so the degree is <m>3</m>. It is a cubic expression, so it is <em>not</em> quadratic.</p>
+    </solution>
+  </problem>
+
+  <problem xml:id="prob-2-1-1-q4">
+    <title>Checkpoint 2.1.1, Question 4</title>
+    <statement>
+      <p>State the degree of <m>x^2 + x + 3</m> and hence state whether it is a quadratic expression.</p>
+    </statement>
+    <solution>
+      <p>The highest power of <m>x</m> is <m>2</m>, so the degree is <m>2</m>. It is a quadratic expression.</p>
+    </solution>
+  </problem>
+
+  <!-- Checkpoint 2.1.7 -->
+  <problem xml:id="prob-2-1-7-q1">
+    <title>Checkpoint 2.1.7, Question 1</title>
+    <statement>
+      <p>Form a quadratic expression for the product of <m>(x-3)</m> and <m>(2x+1)</m>.</p>
+    </statement>
+    <solution>
+      <md>
+        <mrow>(x-3)(2x+1) \amp = 2x^2 + x - 6x - 3</mrow>
+        <mrow>\amp = 2x^2 - 5x - 3</mrow>
+      </md>
+    </solution>
+  </problem>
+
+  <problem xml:id="prob-2-1-7-q2">
+    <title>Checkpoint 2.1.7, Question 2</title>
+    <statement>
+      <p>A rectangular room has length <m>(3x+2)</m> metres and breadth <m>(x-1)</m> metres. Write an expression for its area.</p>
+    </statement>
+    <solution>
+      <md>
+        <mrow>\text{Area} \amp = (3x+2)(x-1)</mrow>
+        <mrow>\amp = 3x^2 - 3x + 2x - 2</mrow>
+        <mrow>\amp = 3x^2 - x - 2</mrow>
+      </md>
+      <p>The area is <m>(3x^2 - x - 2)\,\text{m}^2</m>.</p>
+    </solution>
+  </problem>
+
+  <problem xml:id="prob-2-1-7-q3">
+    <title>Checkpoint 2.1.7, Question 3</title>
+    <statement>
+      <p>Form an expression for the sum of the squares of two consecutive even numbers, <m>n</m> and <m>n+2</m>.</p>
+    </statement>
+    <solution>
+      <md>
+        <mrow>n^2 + (n+2)^2 \amp = n^2 + n^2 + 4n + 4</mrow>
+        <mrow>\amp = 2n^2 + 4n + 4</mrow>
+      </md>
+    </solution>
+  </problem>
+
+  <problem xml:id="prob-2-1-7-q4">
+    <title>Checkpoint 2.1.7, Question 4</title>
+    <statement>
+      <p>A trader sells <m>x</m> items at a price of <m>(80-x)</m> shillings each. Form an expression for the total income.</p>
+    </statement>
+    <solution>
+      <md>
+        <mrow>\text{Income} \amp = x(80-x)</mrow>
+        <mrow>\amp = 80x - x^2</mrow>
+      </md>
+      <p>The total income is <m>(80x - x^2)</m> shillings.</p>
+    </solution>
+  </problem>
+
+  <problem xml:id="prob-2-1-7-q5">
+    <title>Checkpoint 2.1.7, Question 5</title>
+    <statement>
+      <p>A rectangular field has length <m>(2x+1)</m> metres and width <m>(x+3)</m> metres. Write its area, then find the area when <m>x=5</m>.</p>
+    </statement>
+    <solution>
+      <md>
+        <mrow>\text{Area} \amp = (2x+1)(x+3)</mrow>
+        <mrow>\amp = 2x^2 + 6x + x + 3</mrow>
+        <mrow>\amp = 2x^2 + 7x + 3</mrow>
+      </md>
+      <p>When <m>x=5</m>:</p>
+      <md>
+        <mrow>2(5)^2 + 7(5) + 3 \amp = 50 + 35 + 3 = 88</mrow>
+      </md>
+      <p>The area is <m>88\,\text{m}^2</m>.</p>
+    </solution>
+  </problem>
+</section>
+
+<!-- ===================== 2.2 QUADRATIC IDENTITIES ===================== -->
+<section xml:id="sec-quadratic-identities-checkpoints">
+  <title>Checkpoints: Quadratic Identities</title>
+
+  <problem xml:id="prob-2-2-8-q1a">
+    <title>Checkpoint 2.2.8, Question 1(a)</title>
+    <statement>
+      <p>Expand <m>(x+6)^2</m>.</p>
+    </statement>
+    <solution>
+      <p>Using <m>(a+b)^2 = a^2 + 2ab + b^2</m> with <m>a=x</m> and <m>b=6</m>:</p>
+      <md>
+        <mrow>(x+6)^2 \amp = x^2 + 2(x)(6) + 6^2</mrow>
+        <mrow>\amp = x^2 + 12x + 36</mrow>
+      </md>
+    </solution>
+  </problem>
+
+  <problem xml:id="prob-2-2-8-q1b">
+    <title>Checkpoint 2.2.8, Question 1(b)</title>
+    <statement>
+      <p>Expand <m>(5x-2)^2</m>.</p>
+    </statement>
+    <solution>
+      <p>Using <m>(a-b)^2 = a^2 - 2ab + b^2</m> with <m>a=5x</m> and <m>b=2</m>:</p>
+      <md>
+        <mrow>(5x-2)^2 \amp = (5x)^2 - 2(5x)(2) + 2^2</mrow>
+        <mrow>\amp = 25x^2 - 20x + 4</mrow>
+      </md>
+    </solution>
+  </problem>
+
+  <problem xml:id="prob-2-2-8-q1c">
+    <title>Checkpoint 2.2.8, Question 1(c)</title>
+    <statement>
+      <p>Expand <m>(4x+3)(4x-3)</m>.</p>
+    </statement>
+    <solution>
+      <p>Using <m>(a+b)(a-b) = a^2 - b^2</m> with <m>a=4x</m> and <m>b=3</m>:</p>
+      <md>
+        <mrow>(4x+3)(4x-3) \amp = (4x)^2 - 3^2</mrow>
+        <mrow>\amp = 16x^2 - 9</mrow>
+      </md>
+    </solution>
+  </problem>
+
+  <problem xml:id="prob-2-2-8-q1d">
+    <title>Checkpoint 2.2.8, Question 1(d)</title>
+    <statement>
+      <p>Expand <m>(2a-3b)^2</m>.</p>
+    </statement>
+    <solution>
+      <p>Using <m>(a-b)^2 = a^2 - 2ab + b^2</m> with first term <m>2a</m> and second term <m>3b</m>:</p>
+      <md>
+        <mrow>(2a-3b)^2 \amp = (2a)^2 - 2(2a)(3b) + (3b)^2</mrow>
+        <mrow>\amp = 4a^2 - 12ab + 9b^2</mrow>
+      </md>
+    </solution>
+  </problem>
+
+  <problem xml:id="prob-2-2-8-q2a">
+    <title>Checkpoint 2.2.8, Question 2(a)</title>
+    <statement>
+      <p>Factorise <m>x^2 - 64</m>.</p>
+    </statement>
+    <solution>
+      <p>This is a difference of two squares, <m>a^2 - b^2 = (a+b)(a-b)</m>, with <m>a=x</m> and <m>b=8</m>:</p>
+      <md>
+        <mrow>x^2 - 64 \amp = x^2 - 8^2</mrow>
+        <mrow>\amp = (x+8)(x-8)</mrow>
+      </md>
+    </solution>
+  </problem>
+
+  <problem xml:id="prob-2-2-8-q2b">
+    <title>Checkpoint 2.2.8, Question 2(b)</title>
+    <statement>
+      <p>Factorise <m>9x^2 + 12x + 4</m>.</p>
+    </statement>
+    <solution>
+      <p>Notice <m>9x^2 = (3x)^2</m>, <m>4 = 2^2</m> and <m>12x = 2(3x)(2)</m>. This matches <m>(a+b)^2 = a^2 + 2ab + b^2</m>:</p>
+      <md>
+        <mrow>9x^2 + 12x + 4 \amp = (3x)^2 + 2(3x)(2) + 2^2</mrow>
+        <mrow>\amp = (3x+2)^2</mrow>
+      </md>
+    </solution>
+  </problem>
+
+  <problem xml:id="prob-2-2-8-q2c">
+    <title>Checkpoint 2.2.8, Question 2(c)</title>
+    <statement>
+      <p>Factorise <m>36x^2 - 60x + 25</m>.</p>
+    </statement>
+    <solution>
+      <p>Notice <m>36x^2 = (6x)^2</m>, <m>25 = 5^2</m> and <m>60x = 2(6x)(5)</m>. This matches <m>(a-b)^2 = a^2 - 2ab + b^2</m>:</p>
+      <md>
+        <mrow>36x^2 - 60x + 25 \amp = (6x)^2 - 2(6x)(5) + 5^2</mrow>
+        <mrow>\amp = (6x-5)^2</mrow>
+      </md>
+    </solution>
+  </problem>
+</section>
+
+<!-- ===================== 2.3 QUADRATIC EQUATIONS ===================== -->
+<section xml:id="sec-quadratic-equations-checkpoints">
+  <title>Checkpoints: Quadratic Equations</title>
+
+  <!-- Checkpoint 2.3.3 -->
+  <problem xml:id="prob-2-3-3-q1">
+    <title>Checkpoint 2.3.3, Question 1</title>
+    <statement>
+      <p>The area of a rectangular plot is <m>528\,\text{m}^2</m>. The length of the plot (in metres) is one more than twice its breadth. Find the length and breadth of the plot.</p>
+    </statement>
+    <solution>
+      <p>Let the breadth be <m>b</m> metres. Then the length is <m>(2b+1)</m> metres.</p>
+      <md>
+        <mrow>b(2b+1) \amp = 528</mrow>
+        <mrow>2b^2 + b - 528 \amp = 0</mrow>
+        <mrow>(b-16)(2b+33) \amp = 0</mrow>
+      </md>
+      <p>So <m>b = 16</m> or <m>b = -\frac{33}{2}</m>. A length cannot be negative, so we reject <m>b = -\frac{33}{2}</m>.</p>
+      <p>The breadth is <m>16</m> m and the length is <m>2(16)+1 = 33</m> m.</p>
+    </solution>
+  </problem>
+
+  <problem xml:id="prob-2-3-3-q2">
+    <title>Checkpoint 2.3.3, Question 2</title>
+    <statement>
+      <p>The product of two consecutive positive integers is <m>306</m>. Find the integers.</p>
+    </statement>
+    <solution>
+      <p>Let the integers be <m>n</m> and <m>n+1</m>.</p>
+      <md>
+        <mrow>n(n+1) \amp = 306</mrow>
+        <mrow>n^2 + n - 306 \amp = 0</mrow>
+        <mrow>(n-17)(n+18) \amp = 0</mrow>
+      </md>
+      <p>So <m>n = 17</m> or <m>n = -18</m>. The integers are positive, so <m>n = 17</m>. The integers are <m>17</m> and <m>18</m>.</p>
+    </solution>
+  </problem>
+
+  <problem xml:id="prob-2-3-3-q3">
+    <title>Checkpoint 2.3.3, Question 3</title>
+    <statement>
+      <p>Rohan's mother is <m>26</m> years older than him. The product of their ages (in years) <m>3</m> years from now will be <m>360</m>. Find Rohan's present age.</p>
+    </statement>
+    <solution>
+      <p>Let Rohan's present age be <m>x</m> years. His mother's present age is <m>(x+26)</m> years. In <m>3</m> years their ages will be <m>(x+3)</m> and <m>(x+29)</m>.</p>
+      <md>
+        <mrow>(x+3)(x+29) \amp = 360</mrow>
+        <mrow>x^2 + 32x + 87 \amp = 360</mrow>
+        <mrow>x^2 + 32x - 273 \amp = 0</mrow>
+        <mrow>(x-7)(x+39) \amp = 0</mrow>
+      </md>
+      <p>So <m>x = 7</m> or <m>x = -39</m>. An age cannot be negative, so Rohan is <m>7</m> years old.</p>
+      <p>Check: <m>(7+3)(7+29) = 10 \times 36 = 360</m>.</p>
+    </solution>
+  </problem>
+
+  <!-- Checkpoint 2.3.11 -->
+  <problem xml:id="prob-2-3-11-q1">
+    <title>Checkpoint 2.3.11, Question 1</title>
+    <statement>
+      <p>Solve <m>x^2 - 9x + 20 = 0</m> by factorization.</p>
+    </statement>
+    <solution>
+      <p>Two numbers that multiply to <m>20</m> and add to <m>-9</m> are <m>-4</m> and <m>-5</m>.</p>
+      <md>
+        <mrow>x^2 - 9x + 20 \amp = 0</mrow>
+        <mrow>(x-4)(x-5) \amp = 0</mrow>
+      </md>
+      <p>So <m>x - 4 = 0</m> or <m>x - 5 = 0</m>, giving <m>x = 4</m> or <m>x = 5</m>.</p>
+    </solution>
+  </problem>
+
+  <problem xml:id="prob-2-3-11-q2">
+    <title>Checkpoint 2.3.11, Question 2</title>
+    <statement>
+      <p>Solve <m>x^2 + 8x - 9 = 0</m> by completing the square.</p>
+    </statement>
+    <solution>
+      <p>Move the constant to the right side:</p>
+      <md>
+        <mrow>x^2 + 8x \amp = 9</mrow>
+      </md>
+      <p>Add <m>\left(\frac{8}{2}\right)^2 = 16</m> to both sides:</p>
+      <md>
+        <mrow>x^2 + 8x + 16 \amp = 9 + 16</mrow>
+        <mrow>(x+4)^2 \amp = 25</mrow>
+        <mrow>x + 4 \amp = \pm 5</mrow>
+      </md>
+      <p>So <m>x = -4 + 5 = 1</m> or <m>x = -4 - 5 = -9</m>.</p>
+    </solution>
+  </problem>
+
+  <problem xml:id="prob-2-3-11-q3">
+    <title>Checkpoint 2.3.11, Question 3</title>
+    <statement>
+      <p>Solve <m>3x^2 + 5x - 2 = 0</m> using the quadratic formula.</p>
+    </statement>
+    <solution>
+      <p>Here <m>a = 3</m>, <m>b = 5</m> and <m>c = -2</m>.</p>
+      <md>
+        <mrow>x \amp = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}</mrow>
+        <mrow>\amp = \frac{-5 \pm \sqrt{5^2 - 4(3)(-2)}}{2(3)}</mrow>
+        <mrow>\amp = \frac{-5 \pm \sqrt{49}}{6}</mrow>
+        <mrow>\amp = \frac{-5 \pm 7}{6}</mrow>
+      </md>
+      <p>So <m>x = \frac{-5+7}{6} = \frac{1}{3}</m> or <m>x = \frac{-5-7}{6} = -2</m>.</p>
+    </solution>
+  </problem>
+
+  <problem xml:id="prob-2-3-11-q4">
+    <title>Checkpoint 2.3.11, Question 4</title>
+    <statement>
+      <p>Solve <m>2x^2 + 7x = 15</m> by factorization.</p>
+    </statement>
+    <solution>
+      <p>Write in standard form: <m>2x^2 + 7x - 15 = 0</m>. Here <m>ac = 2 \times (-15) = -30</m>, and two numbers that multiply to <m>-30</m> and add to <m>7</m> are <m>10</m> and <m>-3</m>.</p>
+      <md>
+        <mrow>2x^2 + 10x - 3x - 15 \amp = 0</mrow>
+        <mrow>2x(x+5) - 3(x+5) \amp = 0</mrow>
+        <mrow>(2x-3)(x+5) \amp = 0</mrow>
+      </md>
+      <p>So <m>x = \frac{3}{2}</m> or <m>x = -5</m>.</p>
+    </solution>
+  </problem>
+
+  <problem xml:id="prob-2-3-11-q5">
+    <title>Checkpoint 2.3.11, Question 5</title>
+    <statement>
+      <p>Solve <m>x^2 - 6x - 16 = 0</m> by completing the square.</p>
+    </statement>
+    <solution>
+      <p>Move the constant to the right side:</p>
+      <md>
+        <mrow>x^2 - 6x \amp = 16</mrow>
+      </md>
+      <p>Add <m>\left(\frac{-6}{2}\right)^2 = 9</m> to both sides:</p>
+      <md>
+        <mrow>x^2 - 6x + 9 \amp = 16 + 9</mrow>
+        <mrow>(x-3)^2 \amp = 25</mrow>
+        <mrow>x - 3 \amp = \pm 5</mrow>
+      </md>
+      <p>So <m>x = 3 + 5 = 8</m> or <m>x = 3 - 5 = -2</m>.</p>
+    </solution>
+  </problem>
+
+  <problem xml:id="prob-2-3-11-q6">
+    <title>Checkpoint 2.3.11, Question 6</title>
+    <statement>
+      <p>Solve <m>2x^2 - 7x + 3 = 0</m> using the quadratic formula.</p>
+    </statement>
+    <solution>
+      <p>Here <m>a = 2</m>, <m>b = -7</m> and <m>c = 3</m>.</p>
+      <md>
+        <mrow>x \amp = \frac{-(-7) \pm \sqrt{(-7)^2 - 4(2)(3)}}{2(2)}</mrow>
+        <mrow>\amp = \frac{7 \pm \sqrt{25}}{4}</mrow>
+        <mrow>\amp = \frac{7 \pm 5}{4}</mrow>
+      </md>
+      <p>So <m>x = \frac{12}{4} = 3</m> or <m>x = \frac{2}{4} = \frac{1}{2}</m>.</p>
+    </solution>
+  </problem>
+
+  <problem xml:id="prob-2-3-11-q7">
+    <title>Checkpoint 2.3.11, Question 7</title>
+    <statement>
+      <p>The length of a rectangular lawn is <m>5</m> metres longer than its width. If the area of the lawn is <m>84\,\text{m}^2</m>, calculate its length and width by factorization.</p>
+    </statement>
+    <solution>
+      <p>Let the width be <m>w</m> metres. Then the length is <m>(w+5)</m> metres.</p>
+      <md>
+        <mrow>w(w+5) \amp = 84</mrow>
+        <mrow>w^2 + 5w - 84 \amp = 0</mrow>
+        <mrow>(w+12)(w-7) \amp = 0</mrow>
+      </md>
+      <p>So <m>w = -12</m> or <m>w = 7</m>. Width must be positive, so we reject <m>w = -12</m>.</p>
+      <p>The width is <m>7</m> m and the length is <m>7 + 5 = 12</m> m.</p>
+    </solution>
+  </problem>
+
+  <problem xml:id="prob-2-3-11-q8">
+    <title>Checkpoint 2.3.11, Question 8</title>
+    <statement>
+      <p>The product of two consecutive positive integers is <m>156</m>. Set up a quadratic equation and solve it by completing the square to find the two integers.</p>
+    </statement>
+    <solution>
+      <p>Let the integers be <m>n</m> and <m>n+1</m>.</p>
+      <md>
+        <mrow>n(n+1) \amp = 156</mrow>
+        <mrow>n^2 + n \amp = 156</mrow>
+      </md>
+      <p>Add <m>\left(\frac{1}{2}\right)^2 = \frac{1}{4}</m> to both sides:</p>
+      <md>
+        <mrow>n^2 + n + \frac{1}{4} \amp = 156 + \frac{1}{4}</mrow>
+        <mrow>\left(n + \frac{1}{2}\right)^2 \amp = \frac{625}{4}</mrow>
+        <mrow>n + \frac{1}{2} \amp = \pm \frac{25}{2}</mrow>
+      </md>
+      <p>So <m>n = 12</m> or <m>n = -13</m>. The integers are positive, so <m>n = 12</m>. The integers are <m>12</m> and <m>13</m>.</p>
+    </solution>
+  </problem>
+
+  <problem xml:id="prob-2-3-11-q9">
+    <title>Checkpoint 2.3.11, Question 9</title>
+    <statement>
+      <p>A ball is kicked vertically upwards into the air. Its height <m>h</m> (in metres) after <m>t</m> seconds is given by <m>h = 20t - 5t^2</m>. Find the time(s) when the ball reaches a height of <m>15</m> metres using the quadratic formula.</p>
+    </statement>
+    <solution>
+      <p>Set <m>h = 15</m>:</p>
+      <md>
+        <mrow>20t - 5t^2 \amp = 15</mrow>
+        <mrow>5t^2 - 20t + 15 \amp = 0</mrow>
+        <mrow>t^2 - 4t + 3 \amp = 0</mrow>
+      </md>
+      <p>Here <m>a = 1</m>, <m>b = -4</m> and <m>c = 3</m>.</p>
+      <md>
+        <mrow>t \amp = \frac{4 \pm \sqrt{(-4)^2 - 4(1)(3)}}{2(1)}</mrow>
+        <mrow>\amp = \frac{4 \pm \sqrt{4}}{2}</mrow>
+        <mrow>\amp = \frac{4 \pm 2}{2}</mrow>
+      </md>
+      <p>So <m>t = 1</m> or <m>t = 3</m>. The ball is at <m>15</m> m after <m>1</m> second (going up) and again after <m>3</m> seconds (coming down).</p>
+    </solution>
+  </problem>
+
+  <problem xml:id="prob-2-3-11-q10">
+    <title>Checkpoint 2.3.11, Question 10</title>
+    <statement>
+      <p>The hypotenuse of a right-angled triangle is <m>(x+2)</m> cm. The other two sides are <m>x</m> cm and <m>(x-2)</m> cm. Use Pythagoras' Theorem to form a quadratic equation and solve for <m>x</m>.</p>
+    </statement>
+    <solution>
+      <p>By Pythagoras' Theorem:</p>
+      <md>
+        <mrow>x^2 + (x-2)^2 \amp = (x+2)^2</mrow>
+        <mrow>x^2 + x^2 - 4x + 4 \amp = x^2 + 4x + 4</mrow>
+        <mrow>x^2 - 8x \amp = 0</mrow>
+        <mrow>x(x-8) \amp = 0</mrow>
+      </md>
+      <p>So <m>x = 0</m> or <m>x = 8</m>. A side length cannot be <m>0</m>, so <m>x = 8</m>.</p>
+      <p>The sides are <m>6</m> cm, <m>8</m> cm and <m>10</m> cm, and indeed <m>6^2 + 8^2 = 100 = 10^2</m>.</p>
+    </solution>
+  </problem>
+</section>
+    <p/>
+  </handout>
+</section>
+</chapter>
+  <chapter xml:id="ch-homework" label="ch-homework">
+<title>Practice Problems</title>
+<section xml:id="sec-answers-to-practice-problems" label="sec-answers-to-practice-problems">
+<title>Practice Problems</title>
+<handout>
+  <title>Practice Problems</title>
+  <!-- ===================== PRACTICE EXERCISES ===================== -->
+<section xml:id="sec-practice-exercises">
+  <title>Practice Exercises</title>
+
+  <problem xml:id="prob-practice-q1">
+    <title>Practice Exercise 1: The Vegetable Garden</title>
+    <statement>
+      <p>The length of a rectangular vegetable garden is <m>3</m> metres more than its width. The area of the garden is <m>70\,\text{m}^2</m>. Find the length and width of the garden.</p>
+    </statement>
+    <solution>
+      <p>Let the width be <m>w</m> metres. Then the length is <m>(w+3)</m> metres.</p>
+      <md>
+        <mrow>w(w+3) \amp = 70</mrow>
+        <mrow>w^2 + 3w - 70 \amp = 0</mrow>
+        <mrow>(w+10)(w-7) \amp = 0</mrow>
+      </md>
+      <p>So <m>w = -10</m> or <m>w = 7</m>. A width cannot be negative, so <m>w = 7</m>.</p>
+      <p>The width is <m>7</m> m and the length is <m>10</m> m. Check: <m>7 \times 10 = 70</m>.</p>
+    </solution>
+  </problem>
+
+  <problem xml:id="prob-practice-q2">
+    <title>Practice Exercise 2: Consecutive Odd Numbers</title>
+    <statement>
+      <p>The product of two consecutive positive odd integers is <m>143</m>. Form a quadratic equation and solve it to find the integers.</p>
+    </statement>
+    <solution>
+      <p>Let the integers be <m>n</m> and <m>n+2</m>.</p>
+      <md>
+        <mrow>n(n+2) \amp = 143</mrow>
+        <mrow>n^2 + 2n - 143 \amp = 0</mrow>
+        <mrow>(n+13)(n-11) \amp = 0</mrow>
+      </md>
+      <p>So <m>n = -13</m> or <m>n = 11</m>. The integers are positive, so <m>n = 11</m>.</p>
+      <p>The integers are <m>11</m> and <m>13</m>. Check: <m>11 \times 13 = 143</m>.</p>
+    </solution>
+  </problem>
+
+  <problem xml:id="prob-practice-q3">
+    <title>Practice Exercise 3: Using Identities</title>
+    <statement>
+      <p>Use the quadratic identities to evaluate the following without a calculator.</p>
+      <ol marker="(a)">
+        <li><p><m>99^2</m></p></li>
+        <li><p><m>103^2 - 97^2</m></p></li>
+      </ol>
+    </statement>
+    <solution>
+      <ol marker="(a)">
+        <li>
+          <p>Write <m>99 = 100 - 1</m> and use <m>(a-b)^2 = a^2 - 2ab + b^2</m>:</p>
+          <md>
+            <mrow>99^2 \amp = (100-1)^2</mrow>
+            <mrow>\amp = 10000 - 200 + 1</mrow>
+            <mrow>\amp = 9801</mrow>
+          </md>
+        </li>
+        <li>
+          <p>Use the difference of two squares, <m>a^2 - b^2 = (a+b)(a-b)</m>:</p>
+          <md>
+            <mrow>103^2 - 97^2 \amp = (103+97)(103-97)</mrow>
+            <mrow>\amp = 200 \times 6</mrow>
+            <mrow>\amp = 1200</mrow>
+          </md>
+        </li>
+      </ol>
+    </solution>
+  </problem>
+
+  <problem xml:id="prob-practice-q4">
+    <title>Practice Exercise 4: The Maize Plot</title>
+    <statement>
+      <p>A farmer has a rectangular maize plot with a perimeter of <m>34</m> m and an area of <m>60\,\text{m}^2</m>. Find the dimensions of the plot.</p>
+    </statement>
+    <solution>
+      <p>The perimeter is <m>34</m> m, so length plus width is <m>17</m> m. Let the width be <m>w</m> metres. Then the length is <m>(17-w)</m> metres.</p>
+      <md>
+        <mrow>w(17-w) \amp = 60</mrow>
+        <mrow>17w - w^2 \amp = 60</mrow>
+        <mrow>w^2 - 17w + 60 \amp = 0</mrow>
+        <mrow>(w-5)(w-12) \amp = 0</mrow>
+      </md>
+      <p>So <m>w = 5</m> or <m>w = 12</m>. If <m>w = 5</m> the length is <m>12</m>, and if <m>w = 12</m> the length is <m>5</m>. Both give the same plot.</p>
+      <p>The plot measures <m>12</m> m by <m>5</m> m. Check: perimeter <m>2(12+5) = 34</m> and area <m>12 \times 5 = 60</m>.</p>
+    </solution>
+  </problem>
+
+  <problem xml:id="prob-practice-q5">
+    <title>Practice Exercise 5: The Matatu Journey</title>
+    <statement>
+      <p>A matatu travels a distance of <m>120</m> km at a uniform speed. If its speed had been <m>10</m> km/h more, the journey would have taken <m>1</m> hour less. Find the original speed of the matatu.</p>
+    </statement>
+    <solution>
+      <p>Let the original speed be <m>x</m> km/h. Using time <m>= \frac{\text{distance}}{\text{speed}}</m>, the original time is <m>\frac{120}{x}</m> hours and the new time is <m>\frac{120}{x+10}</m> hours. The difference is <m>1</m> hour:</p>
+      <md>
+        <mrow>\frac{120}{x} - \frac{120}{x+10} \amp = 1</mrow>
+        <mrow>120(x+10) - 120x \amp = x(x+10)</mrow>
+        <mrow>1200 \amp = x^2 + 10x</mrow>
+        <mrow>x^2 + 10x - 1200 \amp = 0</mrow>
+        <mrow>(x+40)(x-30) \amp = 0</mrow>
+      </md>
+      <p>So <m>x = -40</m> or <m>x = 30</m>. A speed cannot be negative, so the original speed is <m>30</m> km/h.</p>
+      <p>Check: <m>\frac{120}{30} = 4</m> hours and <m>\frac{120}{40} = 3</m> hours, which is <m>1</m> hour less.</p>
+    </solution>
+  </problem>
+
+  <problem xml:id="prob-practice-q6">
+    <title>Practice Exercise 6: The Right-Angled Triangle</title>
+    <statement>
+      <p>The two shorter sides of a right-angled triangle differ by <m>7</m> cm. The hypotenuse is <m>13</m> cm. Form a quadratic equation and use it to find the lengths of the two shorter sides.</p>
+    </statement>
+    <solution>
+      <p>Let the shorter side be <m>x</m> cm. Then the other side is <m>(x+7)</m> cm. By Pythagoras' Theorem:</p>
+      <md>
+        <mrow>x^2 + (x+7)^2 \amp = 13^2</mrow>
+        <mrow>x^2 + x^2 + 14x + 49 \amp = 169</mrow>
+        <mrow>2x^2 + 14x - 120 \amp = 0</mrow>
+        <mrow>x^2 + 7x - 60 \amp = 0</mrow>
+        <mrow>(x+12)(x-5) \amp = 0</mrow>
+      </md>
+      <p>So <m>x = -12</m> or <m>x = 5</m>. A length cannot be negative, so <m>x = 5</m>.</p>
+      <p>The two shorter sides are <m>5</m> cm and <m>12</m> cm. Check: <m>5^2 + 12^2 = 169 = 13^2</m>.</p>
+    </solution>
+  </problem>
+
+  <problem xml:id="prob-practice-q7">
+    <title>Practice Exercise 7: The Exercise Books</title>
+    <statement>
+      <p>A school buys some exercise books for exactly Ksh <m>600</m>. If each book had cost Ksh <m>5</m> less, the school would have bought <m>4</m> more books for the same amount of money. How many books did the school buy, and what was the price of each book?</p>
+    </statement>
+    <solution>
+      <p>Let the number of books be <m>n</m>. The price of each book is <m>\frac{600}{n}</m> shillings. With the lower price, the school buys <m>(n+4)</m> books at <m>\left(\frac{600}{n} - 5\right)</m> shillings each, still spending <m>600</m> shillings:</p>
+      <md>
+        <mrow>(n+4)\left(\frac{600}{n} - 5\right) \amp = 600</mrow>
+        <mrow>600 - 5n + \frac{2400}{n} - 20 \amp = 600</mrow>
+        <mrow>-5n + \frac{2400}{n} - 20 \amp = 0</mrow>
+        <mrow>-5n^2 - 20n + 2400 \amp = 0</mrow>
+        <mrow>n^2 + 4n - 480 \amp = 0</mrow>
+        <mrow>(n+24)(n-20) \amp = 0</mrow>
+      </md>
+      <p>So <m>n = -24</m> or <m>n = 20</m>. The number of books cannot be negative, so <m>n = 20</m>.</p>
+      <p>The school bought <m>20</m> books at Ksh <m>\frac{600}{20} = 30</m> each. Check: <m>24</m> books at Ksh <m>25</m> each cost <m>24 \times 25 = 600</m>.</p>
+    </solution>
+  </problem>
+
+  <problem xml:id="prob-practice-q8">
+    <title>Practice Exercise 8: The Stone from the Cliff</title>
+    <statement>
+      <p>A stone is thrown upwards from the top of a <m>25</m> m cliff. Its height <m>h</m> metres above the ground after <m>t</m> seconds is given by <m>h = 25 + 20t - 5t^2</m>.</p>
+      <ol marker="(a)">
+        <li><p>Use the quadratic formula to find when the stone hits the ground.</p></li>
+        <li><p>Find the times when the stone is at a height of <m>40</m> m.</p></li>
+        <li><p>Complete the square to find the maximum height of the stone.</p></li>
+      </ol>
+    </statement>
+    <solution>
+      <ol marker="(a)">
+        <li>
+          <p>The stone is on the ground when <m>h = 0</m>:</p>
+          <md>
+            <mrow>25 + 20t - 5t^2 \amp = 0</mrow>
+            <mrow>t^2 - 4t - 5 \amp = 0</mrow>
+          </md>
+          <p>Here <m>a = 1</m>, <m>b = -4</m> and <m>c = -5</m>:</p>
+          <md>
+            <mrow>t \amp = \frac{4 \pm \sqrt{(-4)^2 - 4(1)(-5)}}{2}</mrow>
+            <mrow>\amp = \frac{4 \pm \sqrt{36}}{2}</mrow>
+            <mrow>\amp = \frac{4 \pm 6}{2}</mrow>
+          </md>
+          <p>So <m>t = 5</m> or <m>t = -1</m>. Time cannot be negative, so the stone hits the ground after <m>5</m> seconds.</p>
+        </li>
+        <li>
+          <p>Put <m>h = 40</m>:</p>
+          <md>
+            <mrow>25 + 20t - 5t^2 \amp = 40</mrow>
+            <mrow>5t^2 - 20t + 15 \amp = 0</mrow>
+            <mrow>t^2 - 4t + 3 \amp = 0</mrow>
+            <mrow>(t-1)(t-3) \amp = 0</mrow>
+          </md>
+          <p>The stone is at <m>40</m> m after <m>1</m> second (going up) and after <m>3</m> seconds (coming down).</p>
+        </li>
+        <li>
+          <p>Complete the square:</p>
+          <md>
+            <mrow>h \amp = -5t^2 + 20t + 25</mrow>
+            <mrow>\amp = -5(t^2 - 4t) + 25</mrow>
+            <mrow>\amp = -5\left[(t-2)^2 - 4\right] + 25</mrow>
+            <mrow>\amp = 45 - 5(t-2)^2</mrow>
+          </md>
+          <p>Since <m>5(t-2)^2 \ge 0</m>, the largest value of <m>h</m> is <m>45</m>, reached when <m>t = 2</m>. The maximum height is <m>45</m> m.</p>
+        </li>
+      </ol>
+    </solution>
+  </problem>
+
+  <problem xml:id="prob-practice-q9">
+    <title>Practice Exercise 9: The Path Around the Garden</title>
+    <statement>
+      <p>A rectangular flower garden measures <m>12</m> m by <m>8</m> m. A path of uniform width <m>x</m> metres is built all the way around it. The total area of the garden and the path together is <m>165\,\text{m}^2</m>. Form a quadratic equation and use the quadratic formula to find the width of the path.</p>
+    </statement>
+    <solution>
+      <p>With the path, the length becomes <m>(12 + 2x)</m> m and the width becomes <m>(8 + 2x)</m> m.</p>
+      <md>
+        <mrow>(12+2x)(8+2x) \amp = 165</mrow>
+        <mrow>96 + 24x + 16x + 4x^2 \amp = 165</mrow>
+        <mrow>4x^2 + 40x - 69 \amp = 0</mrow>
+      </md>
+      <p>Here <m>a = 4</m>, <m>b = 40</m> and <m>c = -69</m>:</p>
+      <md>
+        <mrow>x \amp = \frac{-40 \pm \sqrt{40^2 - 4(4)(-69)}}{2(4)}</mrow>
+        <mrow>\amp = \frac{-40 \pm \sqrt{2704}}{8}</mrow>
+        <mrow>\amp = \frac{-40 \pm 52}{8}</mrow>
+      </md>
+      <p>So <m>x = \frac{12}{8} = 1.5</m> or <m>x = -\frac{92}{8} = -11.5</m>. A width cannot be negative, so the path is <m>1.5</m> m wide.</p>
+      <p>Check: <m>(12+3)(8+3) = 15 \times 11 = 165</m>.</p>
+    </solution>
+  </problem>
+
+  <problem xml:id="prob-practice-q10">
+    <title>Practice Exercise 10: Fencing Against a Wall</title>
+    <statement>
+      <p>A farmer has <m>40</m> m of fencing. She uses it to fence three sides of a rectangular paddock. The fourth side is an existing wall that needs no fencing. The area of the paddock is <m>150\,\text{m}^2</m>. Find the possible dimensions of the paddock.</p>
+    </statement>
+    <solution>
+      <p>Let the two sides at right angles to the wall be <m>x</m> metres each. The side parallel to the wall is then <m>(40 - 2x)</m> metres.</p>
+      <md>
+        <mrow>x(40 - 2x) \amp = 150</mrow>
+        <mrow>40x - 2x^2 \amp = 150</mrow>
+        <mrow>2x^2 - 40x + 150 \amp = 0</mrow>
+        <mrow>x^2 - 20x + 75 \amp = 0</mrow>
+        <mrow>(x-5)(x-15) \amp = 0</mrow>
+      </md>
+      <p>So <m>x = 5</m> or <m>x = 15</m>. Both values are possible:</p>
+      <ul>
+        <li><p>If <m>x = 5</m>, the sides at right angles to the wall are <m>5</m> m and the side along the wall is <m>30</m> m.</p></li>
+        <li><p>If <m>x = 15</m>, the sides at right angles to the wall are <m>15</m> m and the side along the wall is <m>10</m> m.</p></li>
+      </ul>
+      <p>Check: <m>5 \times 30 = 150</m> and <m>15 \times 10 = 150</m>.</p>
+    </solution>
+  </problem>
+</section>
+
+<!-- ===================== OLYMPIAD PRACTICE PROBLEMS ===================== -->
+<section xml:id="sec-olympiad-problems">
+  <title>Olympiad Practice Problems</title>
+
+  <problem xml:id="prob-olympiad-q1">
+    <title>Olympiad Problem 1: A Parameter in the Equation</title>
+    <statement>
+      <p>Consider the equation <m>x^2 - (k+2)x + 2k = 0</m>, where <m>k</m> is a real number.</p>
+      <ol marker="(a)">
+        <li><p>Factorise the left-hand side and hence solve the equation in terms of <m>k</m>.</p></li>
+        <li><p>Show that the discriminant is a perfect square for every value of <m>k</m>, so the equation always has real roots.</p></li>
+        <li><p>Find the value of <m>k</m> for which the equation has exactly one root.</p></li>
+      </ol>
+    </statement>
+    <solution>
+      <ol marker="(a)">
+        <li>
+          <md>
+            <mrow>x^2 - (k+2)x + 2k \amp = x^2 - kx - 2x + 2k</mrow>
+            <mrow>\amp = x(x-k) - 2(x-k)</mrow>
+            <mrow>\amp = (x-2)(x-k)</mrow>
+          </md>
+          <p>So the roots are <m>x = 2</m> and <m>x = k</m>.</p>
+        </li>
+        <li>
+          <md>
+            <mrow>\Delta \amp = (k+2)^2 - 4(1)(2k)</mrow>
+            <mrow>\amp = k^2 + 4k + 4 - 8k</mrow>
+            <mrow>\amp = k^2 - 4k + 4</mrow>
+            <mrow>\amp = (k-2)^2</mrow>
+          </md>
+          <p>Since <m>(k-2)^2 \ge 0</m> for every real <m>k</m>, the discriminant is never negative, so the roots are always real.</p>
+        </li>
+        <li>
+          <p>There is exactly one root when <m>\Delta = 0</m>, that is <m>(k-2)^2 = 0</m>, so <m>k = 2</m>. Then the roots <m>2</m> and <m>k</m> coincide, and the only root is <m>x = 2</m>.</p>
+        </li>
+      </ol>
+    </solution>
+  </problem>
+
+  <problem xml:id="prob-olympiad-q2">
+    <title>Olympiad Problem 2: A Hidden Quadratic</title>
+    <statement>
+      <p>Solve <m>(x^2 - 5x)^2 - 2(x^2 - 5x) - 24 = 0</m>.</p>
+    </statement>
+    <solution>
+      <p>Let <m>y = x^2 - 5x</m>. The equation becomes a quadratic in <m>y</m>:</p>
+      <md>
+        <mrow>y^2 - 2y - 24 \amp = 0</mrow>
+        <mrow>(y-6)(y+4) \amp = 0</mrow>
+      </md>
+      <p>So <m>y = 6</m> or <m>y = -4</m>. Now substitute back.</p>
+      <p>Case 1: <m>x^2 - 5x = 6</m>.</p>
+      <md>
+        <mrow>x^2 - 5x - 6 \amp = 0</mrow>
+        <mrow>(x-6)(x+1) \amp = 0</mrow>
+      </md>
+      <p>So <m>x = 6</m> or <m>x = -1</m>.</p>
+      <p>Case 2: <m>x^2 - 5x = -4</m>.</p>
+      <md>
+        <mrow>x^2 - 5x + 4 \amp = 0</mrow>
+        <mrow>(x-1)(x-4) \amp = 0</mrow>
+      </md>
+      <p>So <m>x = 1</m> or <m>x = 4</m>.</p>
+      <p>The equation has four solutions: <m>x = -1,\ 1,\ 4,\ 6</m>.</p>
+      <p>Check with <m>x = 1</m>: <m>x^2 - 5x = -4</m>, and <m>(-4)^2 - 2(-4) - 24 = 16 + 8 - 24 = 0</m>.</p>
+    </solution>
+  </problem>
+
+  <problem xml:id="prob-olympiad-q3">
+    <title>Olympiad Problem 3: A Number and Its Reciprocal</title>
+    <statement>
+      <p>A non-zero number <m>x</m> satisfies <m>x + \frac{1}{x} = 4</m>.</p>
+      <ol marker="(a)">
+        <li><p>Find the value of <m>x^2 + \frac{1}{x^2}</m>.</p></li>
+        <li><p>Find the value of <m>x^3 + \frac{1}{x^3}</m>.</p></li>
+        <li><p>Form a quadratic equation in <m>x</m> and solve it. Check that your answer agrees with part (a).</p></li>
+      </ol>
+    </statement>
+    <solution>
+      <ol marker="(a)">
+        <li>
+          <p>Square both sides of <m>x + \frac{1}{x} = 4</m>:</p>
+          <md>
+            <mrow>\left(x + \frac{1}{x}\right)^2 \amp = x^2 + 2 + \frac{1}{x^2}</mrow>
+            <mrow>16 \amp = x^2 + 2 + \frac{1}{x^2}</mrow>
+          </md>
+          <p>So <m>x^2 + \frac{1}{x^2} = 14</m>.</p>
+        </li>
+        <li>
+          <p>Cube both sides:</p>
+          <md>
+            <mrow>\left(x + \frac{1}{x}\right)^3 \amp = x^3 + 3x + \frac{3}{x} + \frac{1}{x^3}</mrow>
+            <mrow>\amp = x^3 + \frac{1}{x^3} + 3\left(x + \frac{1}{x}\right)</mrow>
+            <mrow>64 \amp = x^3 + \frac{1}{x^3} + 12</mrow>
+          </md>
+          <p>So <m>x^3 + \frac{1}{x^3} = 52</m>.</p>
+        </li>
+        <li>
+          <p>Multiply <m>x + \frac{1}{x} = 4</m> by <m>x</m>:</p>
+          <md>
+            <mrow>x^2 + 1 \amp = 4x</mrow>
+            <mrow>x^2 - 4x + 1 \amp = 0</mrow>
+          </md>
+          <p>Using the quadratic formula with <m>a = 1</m>, <m>b = -4</m>, <m>c = 1</m>:</p>
+          <md>
+            <mrow>x \amp = \frac{4 \pm \sqrt{16 - 4}}{2}</mrow>
+            <mrow>\amp = \frac{4 \pm 2\sqrt{3}}{2}</mrow>
+            <mrow>\amp = 2 \pm \sqrt{3}</mrow>
+          </md>
+          <p>Check with <m>x = 2 + \sqrt{3}</m>: then <m>\frac{1}{x} = 2 - \sqrt{3}</m>, since <m>(2+\sqrt{3})(2-\sqrt{3}) = 1</m>. Also <m>x^2 = 7 + 4\sqrt{3}</m> and <m>\frac{1}{x^2} = 7 - 4\sqrt{3}</m>, so their sum is <m>14</m>, which agrees with part (a).</p>
+        </li>
+      </ol>
+    </solution>
+  </problem>
+
+  <problem xml:id="prob-olympiad-q4">
+    <title>Olympiad Problem 4: Four Consecutive Integers</title>
+    <statement>
+      <p>Prove that the product of any four consecutive integers, plus <m>1</m>, is a perfect square. Then use your result to evaluate <m>\sqrt{10 \times 11 \times 12 \times 13 + 1}</m>.</p>
+    </statement>
+    <solution>
+      <p>Let the four consecutive integers be <m>n</m>, <m>n+1</m>, <m>n+2</m> and <m>n+3</m>. Pair the first with the last and the middle two:</p>
+      <md>
+        <mrow>n(n+3) \amp = n^2 + 3n</mrow>
+        <mrow>(n+1)(n+2) \amp = n^2 + 3n + 2</mrow>
+      </md>
+      <p>Let <m>m = n^2 + 3n</m>. Then:</p>
+      <md>
+        <mrow>n(n+1)(n+2)(n+3) + 1 \amp = m(m+2) + 1</mrow>
+        <mrow>\amp = m^2 + 2m + 1</mrow>
+        <mrow>\amp = (m+1)^2</mrow>
+        <mrow>\amp = (n^2 + 3n + 1)^2</mrow>
+      </md>
+      <p>This is the square of the integer <m>n^2 + 3n + 1</m>, so it is a perfect square.</p>
+      <p>For <m>n = 10</m>: <m>n^2 + 3n + 1 = 100 + 30 + 1 = 131</m>. So:</p>
+      <md>
+        <mrow>\sqrt{10 \times 11 \times 12 \times 13 + 1} \amp = 131</mrow>
+      </md>
+      <p>Check: <m>10 \times 11 \times 12 \times 13 = 17160</m> and <m>131^2 = 17161</m>.</p>
+    </solution>
+  </problem>
+
+  <problem xml:id="prob-olympiad-q5">
+    <title>Olympiad Problem 5: The Largest Possible Area</title>
+    <statement>
+      <p>A rectangle has a perimeter of <m>20</m> cm and an area of <m>A\,\text{cm}^2</m>.</p>
+      <ol marker="(a)">
+        <li><p>Let the width be <m>x</m> cm. Show that <m>x^2 - 10x + A = 0</m>.</p></li>
+        <li><p>Use the discriminant to show that <m>A \le 25</m>. What shape is the rectangle when <m>A = 25</m>?</p></li>
+        <li><p>Is it possible for the area to be <m>26\,\text{cm}^2</m>? Is it possible for the area to be <m>24\,\text{cm}^2</m>? If so, find the dimensions.</p></li>
+      </ol>
+    </statement>
+    <solution>
+      <ol marker="(a)">
+        <li>
+          <p>The perimeter is <m>20</m> cm, so length plus width is <m>10</m> cm. If the width is <m>x</m>, the length is <m>(10 - x)</m>.</p>
+          <md>
+            <mrow>x(10-x) \amp = A</mrow>
+            <mrow>10x - x^2 \amp = A</mrow>
+            <mrow>x^2 - 10x + A \amp = 0</mrow>
+          </md>
+        </li>
+        <li>
+          <p>For a rectangle to exist, this equation must have a real solution for <m>x</m>, so <m>\Delta \ge 0</m>:</p>
+          <md>
+            <mrow>(-10)^2 - 4(1)(A) \amp \ge 0</mrow>
+            <mrow>100 - 4A \amp \ge 0</mrow>
+            <mrow>A \amp \le 25</mrow>
+          </md>
+          <p>When <m>A = 25</m>, <m>\Delta = 0</m> and <m>x^2 - 10x + 25 = (x-5)^2 = 0</m>, so <m>x = 5</m>. The length is also <m>10 - 5 = 5</m>, so the rectangle is a square of side <m>5</m> cm.</p>
+        </li>
+        <li>
+          <p>For <m>A = 26</m>: <m>\Delta = 100 - 104 = -4 \lt 0</m>, so no such rectangle exists.</p>
+          <p>For <m>A = 24</m>: <m>x^2 - 10x + 24 = 0</m>, so <m>(x-4)(x-6) = 0</m>. The rectangle measures <m>4</m> cm by <m>6</m> cm.</p>
+        </li>
+      </ol>
+    </solution>
+  </problem>
+
+  <problem xml:id="prob-olympiad-q6">
+    <title>Olympiad Problem 6: Integer Roots</title>
+    <statement>
+      <p>Find all integer values of <m>k</m> for which the equation <m>x^2 - kx + 24 = 0</m> has two integer roots.</p>
+    </statement>
+    <solution>
+      <p>Suppose the roots are the integers <m>p</m> and <m>q</m>. Then the equation can be written as:</p>
+      <md>
+        <mrow>(x-p)(x-q) \amp = x^2 - (p+q)x + pq</mrow>
+      </md>
+      <p>Comparing with <m>x^2 - kx + 24</m>, we need <m>pq = 24</m> and <m>k = p + q</m>.</p>
+      <p>List the integer pairs with product <m>24</m>, and add each pair:</p>
+      <tabular halign="center">
+        <row bottom="minor">
+          <cell><m>(p, q)</m></cell>
+          <cell><m>(1, 24)</m></cell>
+          <cell><m>(2, 12)</m></cell>
+          <cell><m>(3, 8)</m></cell>
+          <cell><m>(4, 6)</m></cell>
+        </row>
+        <row>
+          <cell><m>k = p + q</m></cell>
+          <cell><m>25</m></cell>
+          <cell><m>14</m></cell>
+          <cell><m>11</m></cell>
+          <cell><m>10</m></cell>
+        </row>
+      </tabular>
+      <p>The pairs of negative integers, such as <m>(-1, -24)</m>, also multiply to <m>24</m> and give the negatives of these values of <m>k</m>.</p>
+      <p>So <m>k \in \{-25, -14, -11, -10, 10, 11, 14, 25\}</m>.</p>
+      <p>Check with <m>k = 10</m>: <m>x^2 - 10x + 24 = (x-4)(x-6)</m>, with integer roots <m>4</m> and <m>6</m>.</p>
+    </solution>
+  </problem>
+</section>
+  
+</handout>
+</section>
+</chapter>
+</book>
+</pretext>
